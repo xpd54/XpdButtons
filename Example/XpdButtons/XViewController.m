@@ -18,7 +18,7 @@
 {
     [super viewDidLoad];
     NSArray *buttonproperties = @[@{@"title" : @"button1",
-                                    @"buttonInfo" : @{@"key" : @"value 1"}
+                                    @"buttonInfo" : @{@"key" : @"value"}
                                     },
                                   @{@"title" : @"button2",
                                     @"buttonInfo" : @{@"key" : @"value 2"}
@@ -34,50 +34,27 @@
                                     },
                                   @{@"title" : @"button6",
                                     @"buttonInfo" : @{@"key" : @"value 6"}
-                                    },
-                                  @{@"title" : @"button7",
-                                    @"buttonInfo" : @{@"key" : @"value 7"}
-                                    },
-                                  @{@"title" : @"button8",
-                                    @"buttonInfo" : @{@"key" : @"value 8"}
-                                    },
-                                  @{@"title" : @"button9",
-                                    @"buttonInfo" : @{@"key" : @"value 9"}
                                     }
                                   ];
+
     XpdButtonContainer *buttonPageController = [[XpdButtonContainer alloc] init];
     buttonPageController.delegate = self;
     buttonPageController.buttonProperties = buttonproperties;
-    UIView *baseview = [[UIView alloc] init];
-    baseview.translatesAutoresizingMaskIntoConstraints = false;
-    baseview.backgroundColor = [UIColor whiteColor];
     UIView *buttonView = [buttonPageController getXpdButtonsViewForParentViewController:self];
     buttonView.translatesAutoresizingMaskIntoConstraints = false;
-    [baseview addSubview:buttonView];
-    [self.view addSubview:baseview];
+    [self.view addSubview:buttonView];
     
-    NSDictionary *views = @{@"view" : buttonView,
-                            @"baseView" : baseview};
+    NSDictionary *views = @{@"view" : buttonView};
     NSArray *HC = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[view]-0-|"
                                                           options:NSLayoutFormatAlignAllTop
                                                           metrics:nil
                                                             views:views];
-    NSArray *VC = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[view]-0-|"
+    NSArray *VC = [NSLayoutConstraint constraintsWithVisualFormat:@"V:[view(140)]-0-|"
                                                           options:NSLayoutFormatAlignAllLeft
                                                           metrics:nil
                                                             views:views];
-    NSArray *baseHC = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[baseView]-0-|"
-                                                              options:NSLayoutFormatAlignAllTop
-                                                              metrics:nil
-                                                                views:views];
-    NSArray *baseVC = [NSLayoutConstraint constraintsWithVisualFormat:@"V:[baseView(140)]-0-|"
-                                                              options:NSLayoutFormatAlignAllLeft
-                                                              metrics:nil
-                                                                views:views];
-    [baseview addConstraints:HC];
-    [baseview addConstraints:VC];
-    [self.view addConstraints:baseHC];
-    [self.view addConstraints:baseVC];
+    [self.view addConstraints:HC];
+    [self.view addConstraints:VC];
 }
 
 - (void) buttonGetClicked:(XpdButton *)button {

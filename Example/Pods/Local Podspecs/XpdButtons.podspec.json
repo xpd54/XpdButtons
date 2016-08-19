@@ -1,0 +1,22 @@
+{
+  "name": "XpdButtons",
+  "version": "0.1.0",
+  "summary": "A short description of XpdButtons.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/XpdButtons",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Ravi Prakash": "raviprakash.xpd54@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/XpdButtons.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "XpdButtons/Classes/**/*"
+}

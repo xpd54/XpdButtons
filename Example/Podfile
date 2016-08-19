@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'XpdButtons_Example' do
+  pod 'XpdButtons', :path => '../'
+
+  target 'XpdButtons_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

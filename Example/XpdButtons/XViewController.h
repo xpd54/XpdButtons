@@ -7,7 +7,7 @@
 //
 
 @import UIKit;
-
-@interface XViewController : UIViewController
+#import <XpdButtons/XpdButtonContainer.h>
+@interface XViewController : UIViewController<XpdButtonAction>
 
 @end

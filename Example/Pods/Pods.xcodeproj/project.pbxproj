@@ -37,6 +37,22 @@
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
+		<key>03975A42E604EF6916AD73DE541B371B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C5DEE3319EA27B145C7927A5119516CD</string>
+				<string>2C4BF303EADD4AF332CEAF5A6F371BF5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>ButtonViewController</string>
+			<key>path</key>
+			<string>ButtonViewController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>051EA178FE315C31032083E3131BD7D9</key>
 		<dict>
 			<key>fileRef</key>
@@ -132,6 +148,48 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
+		<key>13D3E37DF5CDF39D7600413666BF5A16</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C04DA5D8B36FC85458404F13DEE81061</string>
+				<string>2006EACD8AB71D76C4FEE7EAB92ABEA3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>ButtonPageController</string>
+			<key>path</key>
+			<string>ButtonPageController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1AD93EF18374FEE31394731A5AFAAF95</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>XpdButtonContainer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2006EACD8AB71D76C4FEE7EAB92ABEA3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ButtonPageController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>2570B710142EE7551B07220796DB7A93</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -152,7 +210,7 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>28A1B43243E8A8EA08FE197406495583</key>
+		<key>2C4BF303EADD4AF332CEAF5A6F371BF5</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -161,7 +219,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>ReplaceMe.m</string>
+			<string>ButtonViewController.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -178,6 +236,21 @@
 			<string>Release</string>
 			<key>isa</key>
 			<string>XCConfigurationList</string>
+		</dict>
+		<key>2E356F33B80CECB67CDA0FB70BFB257F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B1FE79EA5248A375BD2DE225915546ED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>XpdButtons</string>
+			<key>path</key>
+			<string>XpdButtons</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>2FDF4B7E46C6C7A95D35A44CC92645CE</key>
 		<dict>
@@ -262,6 +335,33 @@
 			<string>Pods_XpdButtons_Example.framework</string>
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>3595102277AAFC9E968B8B055F254EF4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>XpdButton.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>377CFCBAFFD78214C96CE4CF761C4C97</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C5DEE3319EA27B145C7927A5119516CD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
 		<key>3E4E89230EF59BC255123B67864ACF77</key>
 		<dict>
@@ -440,6 +540,13 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>598097379FA60AC06AF5840D9F47978F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2006EACD8AB71D76C4FEE7EAB92ABEA3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>69CCF89747774DFFBA2397DC0DC8AD3B</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -453,6 +560,30 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>6AE8D2EC22DF3F80131DDFE7A591989B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>47563C3A8E3406AD3386377480460247</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>74C8FFA6DC9A18D483476856BC1CD8F5</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>598097379FA60AC06AF5840D9F47978F</string>
+				<string>CDFA191881B770773C07E92E860E9A3A</string>
+				<string>7C249E3A10332EB9F297996030B827DB</string>
+				<string>D7D629A66C10C6807762F574B1FE0D25</string>
+				<string>6AE8D2EC22DF3F80131DDFE7A591989B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
 		<key>7B98C3EA449699273B8248500CF7706E</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -463,6 +594,13 @@
 			<string>XpdButtons.modulemap</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7C249E3A10332EB9F297996030B827DB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EBF5ADBA9CB006EF8781B768D432DA78</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>7D5BBF486FE8904342965BC57F46B96D</key>
 		<dict>
@@ -505,41 +643,12 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7ED426F75B264937BA7482757D454FC8</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E82507E2AA5B26DADD9DE85593E46624</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>XpdButtons</string>
-			<key>path</key>
-			<string>XpdButtons</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>83F55BF5DE8CB08FF79ADFBE23AA0837</key>
 		<dict>
 			<key>fileRef</key>
 			<string>3E4E89230EF59BC255123B67864ACF77</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>84C004519BB9907F84DB9EFAB4B52493</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>BB8F487B6D279979809A750334E61CEF</string>
-				<string>CAF46757484123F7BA355978DDF55007</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
 		</dict>
 		<key>8931721B25D29394CA69C0EB9E8A4B71</key>
 		<dict>
@@ -616,6 +725,20 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
+		<key>903E5CC23493F6D109C1835CCE730BC4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3595102277AAFC9E968B8B055F254EF4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
 		<key>91D3E02691EA261564DE3C43A5666D6A</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -628,6 +751,22 @@
 			<string>PBXSourcesBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
+		</dict>
+		<key>9590F80F0B2D8B781FA983F10A634147</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1AD93EF18374FEE31394731A5AFAAF95</string>
+				<string>C2802F86C530041E3E823B66CDB52BA1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>XpdButtonContainer</string>
+			<key>path</key>
+			<string>XpdButtonContainer</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>9B2A574B4653839198EEF059F33637BE</key>
 		<dict>
@@ -673,20 +812,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>A0DD6789EA9F0CBF2CCCE4FE4B26F200</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2D93C63EE572AF3DB9B867E71ACFDFA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
 		<key>A382639BC80007200770C1748329C577</key>
 		<dict>
 			<key>containerPortal</key>
@@ -699,6 +824,41 @@
 			<string>F560F4525E748AF0AD98B38B27D67873</string>
 			<key>remoteInfo</key>
 			<string>XpdButtons</string>
+		</dict>
+		<key>A8E744904A3DB77C3D33B31DCEBFB2DD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>DF1A5D91A541AE88D986DB8F53AB0118</string>
+				<string>377CFCBAFFD78214C96CE4CF761C4C97</string>
+				<string>903E5CC23493F6D109C1835CCE730BC4</string>
+				<string>F4993AA095E3206838AEA230B9641E99</string>
+				<string>D70F7A0EE921005A0F1BC36317A36211</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B1FE79EA5248A375BD2DE225915546ED</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>13D3E37DF5CDF39D7600413666BF5A16</string>
+				<string>03975A42E604EF6916AD73DE541B371B</string>
+				<string>C22E488D63993A394765B2DFFF5FE9BF</string>
+				<string>9590F80F0B2D8B781FA983F10A634147</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Classes</string>
+			<key>path</key>
+			<string>Classes</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>B63B636A646D5D82653996C7F7B392F9</key>
 		<dict>
@@ -787,13 +947,6 @@
 			<key>xcLanguageSpecificationIdentifier</key>
 			<string>xcode.lang.ruby</string>
 		</dict>
-		<key>BB8F487B6D279979809A750334E61CEF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>28A1B43243E8A8EA08FE197406495583</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
 		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
 		<dict>
 			<key>children</key>
@@ -833,6 +986,48 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>C04DA5D8B36FC85458404F13DEE81061</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ButtonPageController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C22E488D63993A394765B2DFFF5FE9BF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3595102277AAFC9E968B8B055F254EF4</string>
+				<string>EBF5ADBA9CB006EF8781B768D432DA78</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>XpdButton</string>
+			<key>path</key>
+			<string>XpdButton</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C2802F86C530041E3E823B66CDB52BA1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>XpdButtonContainer.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>C3AD88F9328CF120E2FBEF91402F3FC4</key>
 		<dict>
 			<key>fileRef</key>
@@ -854,12 +1049,25 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>C5DEE3319EA27B145C7927A5119516CD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ButtonViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>C5F864275A5B468EB606B7A6A3BA4709</key>
 		<dict>
 			<key>children</key>
 			<array>
 				<string>9F951BA07A09CD01D1836173B5DBEA27</string>
-				<string>7ED426F75B264937BA7482757D454FC8</string>
+				<string>2E356F33B80CECB67CDA0FB70BFB257F</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -870,10 +1078,10 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>CAF46757484123F7BA355978DDF55007</key>
+		<key>CDFA191881B770773C07E92E860E9A3A</key>
 		<dict>
 			<key>fileRef</key>
-			<string>47563C3A8E3406AD3386377480460247</string>
+			<string>2C4BF303EADD4AF332CEAF5A6F371BF5</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -939,19 +1147,6 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>D28B70779977908555B510EF95851E99</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>A0DD6789EA9F0CBF2CCCE4FE4B26F200</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
 		<key>D2D93C63EE572AF3DB9B867E71ACFDFA</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1015,6 +1210,20 @@
 			<key>targetProxy</key>
 			<string>A382639BC80007200770C1748329C577</string>
 		</dict>
+		<key>D70F7A0EE921005A0F1BC36317A36211</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D2D93C63EE572AF3DB9B867E71ACFDFA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
 		<key>D77ECC93FFDEE56632C12983CE749DAA</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1027,6 +1236,13 @@
 			<string>Pods-XpdButtons_Example-frameworks.sh</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D7D629A66C10C6807762F574B1FE0D25</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C2802F86C530041E3E823B66CDB52BA1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>DE25A18B91FC1BD47CE0654CBB022CD5</key>
 		<dict>
@@ -1041,6 +1257,20 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>DF1A5D91A541AE88D986DB8F53AB0118</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C04DA5D8B36FC85458404F13DEE81061</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
 		<key>E1CF12CA6A1BA7020C3BFCCE635A1517</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1054,18 +1284,16 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E82507E2AA5B26DADD9DE85593E46624</key>
+		<key>EBF5ADBA9CB006EF8781B768D432DA78</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>28A1B43243E8A8EA08FE197406495583</string>
-			</array>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Classes</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>Classes</string>
+			<string>XpdButton.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1109,15 +1337,29 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>F4993AA095E3206838AEA230B9641E99</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1AD93EF18374FEE31394731A5AFAAF95</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
 		<key>F560F4525E748AF0AD98B38B27D67873</key>
 		<dict>
 			<key>buildConfigurationList</key>
 			<string>EC6545FDECDA366E9C33CE4A60597DCB</string>
 			<key>buildPhases</key>
 			<array>
-				<string>84C004519BB9907F84DB9EFAB4B52493</string>
+				<string>74C8FFA6DC9A18D483476856BC1CD8F5</string>
 				<string>567C182D5DC8B7B36DAA05C23C46C543</string>
-				<string>D28B70779977908555B510EF95851E99</string>
+				<string>A8E744904A3DB77C3D33B31DCEBFB2DD</string>
 			</array>
 			<key>buildRules</key>
 			<array/>

@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ButtonViewController.h"
-@protocol ButtonAction
-- (void) buttonGetClicked:(XpdButton *)button;
+#import "XpdButton.h"
+#define KEYBOARD_BUTTON_TITLE @"title"
+#define KEYBOARD_BUTTON_INFO  @"buttonInfo"
+@protocol XpdButtons
+-(void) buttonGetClicked:(XpdButton *)button;
 @end
 @interface ButtonPageController : UIViewController <UIPageViewControllerDataSource, UIPageViewControllerDelegate, XpdButtons>
 @property (nonatomic, strong) NSArray *buttonProperties;
-@property (nonatomic, weak) id<ButtonAction> delegate;
+@property (nonatomic, weak) id<XpdButtons> delegate;
 @end

@@ -8,8 +8,8 @@
 
 #import "ButtonPageController.h"
 #define SPACING 6
-#define EVENPAD 54
-#define ODDPAD 34
+#define EVENPAD 0
+#define ODDPAD 0
 #define BUTTON_HEIGHT 34
 @interface ButtonPageController ()
 @property (nonatomic, strong) UIPageViewController *pageViewContrroller;
@@ -25,7 +25,7 @@
 
 - (void) loadView {
     [super loadView];
-    self.buttonViewControllers = [[NSArray alloc] initWithArray:[self setupButtonViewControllers]];
+    self.buttonViewControllers = [[NSArray alloc] initWithArray:[self getViewControllersHoldingButtons:self.buttonProperties numberOfRowViewController:4]];
     self.pageViewContrroller = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll
                                                                navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal
                                                                              options:nil];
@@ -44,45 +44,28 @@
     [self.pageViewContrroller didMoveToParentViewController:self];
 }
 
-- (NSArray *) setupButtonViewControllers {
-    NSMutableArray *buttonViewControllers = [[NSMutableArray alloc] init];
-    NSInteger propertiesCount = self.buttonProperties.count;
-    NSInteger numberOfFullButtonVC = propertiesCount / 4;
-    for (int i = 0; i <= numberOfFullButtonVC; i++) {
-        NSArray *property = [NSArray arrayWithArray:[self.buttonProperties subarrayWithRange:NSMakeRange(4*i, MIN(4, propertiesCount))]];
-        if (property.count > 0) {
-            ButtonViewController *buttonVC = [[ButtonViewController alloc] init];
-            buttonVC.delegate = self;
-            buttonVC.buttonProperties = property;
-            [buttonViewControllers addObject:buttonVC];
-        }
-        propertiesCount -= 4;
-    }
-    return buttonViewControllers;
-}
-
 - (nullable UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
     NSInteger vcIndex = [self.buttonViewControllers indexOfObject:viewController];
     NSInteger previousVCIndex = vcIndex - 1;
     if (!(previousVCIndex >= 0)) {
-        return (ButtonViewController *)self.buttonViewControllers.lastObject;
+        return (UIViewController *)self.buttonViewControllers.lastObject;
     }
     if (!(self.buttonViewControllers.count > previousVCIndex)) {
         return nil;
     }
-    return (ButtonViewController *)[self.buttonViewControllers objectAtIndex:previousVCIndex];
+    return (UIViewController *)[self.buttonViewControllers objectAtIndex:previousVCIndex];
 }
 
 - (nullable UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
     NSInteger vcIndex = [self.buttonViewControllers indexOfObject:viewController];
     NSInteger nextVCIndex = vcIndex + 1;
     if (!(nextVCIndex < self.buttonViewControllers.count)) {
-        return (ButtonViewController *)[self.buttonViewControllers objectAtIndex:0];
+        return (UIViewController *)[self.buttonViewControllers objectAtIndex:0];
     }
     if (!(nextVCIndex > 0)) {
         return nil;
     }
-    return (ButtonViewController *)[self.buttonViewControllers objectAtIndex:nextVCIndex];
+    return (UIViewController *)[self.buttonViewControllers objectAtIndex:nextVCIndex];
 }
 
 
@@ -218,6 +201,7 @@
         XpdButton *button = [[XpdButton alloc] init];
         [button setTitle:[self formatedTitle:[obj objectForKey:KEYBOARD_BUTTON_TITLE]] forState:UIControlStateNormal];
         button.buttonInfo = [obj objectForKey:KEYBOARD_BUTTON_INFO];
+        [button addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchDown];
         [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [button setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
         [button sizeToFit];
@@ -232,4 +216,9 @@
 - (NSString *) formatedTitle:(NSString *) titleString {
     return [NSString stringWithFormat:@" %@ ", titleString];
 }
+
+- (IBAction) buttonClicked:(XpdButton *)sender {
+    [self.delegate buttonGetClicked:sender];
+}
+
 @end

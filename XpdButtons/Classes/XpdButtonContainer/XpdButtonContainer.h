@@ -30,7 +30,7 @@
  */
 - (void) buttonGetClicked:(XpdButton *)button;
 @end
-@interface XpdButtonContainer : UIViewController<ButtonAction>
+@interface XpdButtonContainer : UIViewController<XpdButtons>
 
 /**
   Button properties is an Array of dictionary.

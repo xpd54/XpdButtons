@@ -69,7 +69,8 @@
     @code
         XpdButtonContainer *buttonPageController = [[XpdButtonContainer alloc] init];
         buttonPageController.delegate = self;
-        buttonPageController.buttonProperties = properties;
+        buttonPageController.buttonProperties = buttonproperties;
+        buttonPageController.numberOfMaxRow = 4;
         UIView *buttonView = [buttonPageController getXpdButtonsViewForParentViewController:self];
     @endcode
     @see buttonProperties

@@ -100,10 +100,9 @@
 
 #pragma Buttons setup methods (Every thing which finally return array of viewcontroller)
 
-- (NSArray *) getViewControllersHoldingButtons:(NSArray *) buttonTitles numberOfRowViewController: (NSInteger)numberOfRow {
-    NSArray *views = [self getArrayOfViewForButtonTitles:buttonTitles];
+- (NSArray *) getViewControllersHoldingButtons:(NSArray *) buttonProperties numberOfRowViewController: (NSInteger)numberOfRow {
+    NSArray *views = [self getArrayOfViewForButtonProperties:buttonProperties];
     NSMutableArray *viewControllers = [[NSMutableArray alloc] init];
-    // views have 34 height
     for (int i = 0; i < views.count;) {
         NSArray *subArray = [views subarrayWithRange:NSMakeRange(i, MIN(numberOfRow, views.count - i))];
         UIViewController *viewController = [self getViewControllerWithViewArray:subArray];
@@ -150,8 +149,8 @@
     return viewcontroller;
 }
 
--(NSArray *) getArrayOfViewForButtonTitles:(NSArray *)titles {
-    NSArray *buttonArrayFitToWidth = [self getButtonArrayFitToWidth:titles];
+-(NSArray *) getArrayOfViewForButtonProperties:(NSArray *)buttonProperties {
+    NSArray *buttonArrayFitToWidth = [self getButtonArrayFitToWidth:buttonProperties];
     NSMutableArray *viewArray = [[NSMutableArray alloc] init];
     for (int i = 0; i < buttonArrayFitToWidth.count; i++) {
         NSArray *buttons = [buttonArrayFitToWidth objectAtIndex:i];
@@ -160,7 +159,7 @@
         NSString *horizontalConstraintString = @"H:|-0-";
         NSString *verticalConstraintString = [NSString stringWithFormat:@"V:|-0-[button%d0]-0-|",i];
         for (int j = 0; j < buttons.count; j++) {
-            UIButton *button = [buttons objectAtIndex:j];
+            XpdButton *button = [buttons objectAtIndex:j];
             button.translatesAutoresizingMaskIntoConstraints = false;
             [baseView addSubview:button];
             NSString *buttonString = [NSString stringWithFormat:@"button%d%d", i,j];
@@ -186,8 +185,8 @@
     return viewArray;
 }
 
-- (NSArray *) getButtonArrayFitToWidth:(NSArray *) titles {
-    NSMutableArray *buttonArray = [self getAllButtonForTitles:titles];
+- (NSArray *) getButtonArrayFitToWidth:(NSArray *) buttonProperties {
+    NSMutableArray *buttonArray = [self getAllButtonForTitles:buttonProperties];
     NSMutableArray *resultArray = [[NSMutableArray alloc] init];
     for (int i = 0; buttonArray.count > 0; i++) {
         NSMutableArray *row = [[NSMutableArray alloc] init];
@@ -198,10 +197,10 @@
             width = 2 * ODDPAD;
         }
         for(int j = 0; buttonArray.count > 0; j++) {
-            UIButton *firstButton = (UIButton *)[buttonArray firstObject];
+            XpdButton *firstButton = (XpdButton *)[buttonArray firstObject];
             width = width + firstButton.frame.size.width + j * SPACING;
             if (width <= self.view.frame.size.width) {
-                UIButton *button = [buttonArray firstObject];
+                XpdButton *button = [buttonArray firstObject];
                 [row addObject:button];
                 [buttonArray removeObjectAtIndex:0];
             } else {
@@ -213,11 +212,12 @@
     return resultArray;
 }
 
-- (NSMutableArray *) getAllButtonForTitles:(NSArray *) titles {
+- (NSMutableArray *) getAllButtonForTitles:(NSArray *) buttonProperties {
     NSMutableArray *buttonArray = [[NSMutableArray alloc] init];
-    [titles enumerateObjectsUsingBlock:^(NSString  *_Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        UIButton *button = [[UIButton alloc] init];
-        [button setTitle:[self formatedTitle:obj] forState:UIControlStateNormal];
+    [buttonProperties enumerateObjectsUsingBlock:^(NSDictionary  *_Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        XpdButton *button = [[XpdButton alloc] init];
+        [button setTitle:[self formatedTitle:[obj objectForKey:KEYBOARD_BUTTON_TITLE]] forState:UIControlStateNormal];
+        button.buttonInfo = [obj objectForKey:KEYBOARD_BUTTON_INFO];
         [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [button setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
         [button sizeToFit];

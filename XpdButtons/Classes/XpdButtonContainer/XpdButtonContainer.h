@@ -14,6 +14,7 @@
     @see -(UIView *) getXpdButtonsViewForParentViewController:(UIViewController *)parent;
  */
 @protocol XpdButtonAction
+
 /**
     Track when Buttons got clicked. Use buttonInfo and title property to track which button get clicked.
     @code 
@@ -48,6 +49,11 @@
     @endcode
  */
 @property (nonatomic, strong) NSArray *buttonProperties;
+
+/**
+  Number of maximum row of buttons in one pageView. It will dynamically set other buttons to diffrent pageView.
+ */
+@property NSUInteger numberOfMaxRow;
 
 /**
     Delegate to use XpdButtonAction protocol

@@ -22,6 +22,7 @@
 -(UIView *) getXpdButtonsViewForParentViewController:(UIViewController *)parent {
     XpdButtonPageController *xpdButtonPageController = [[XpdButtonPageController alloc] init];
     xpdButtonPageController.buttonProperties = self.buttonProperties;
+    xpdButtonPageController.numberOfMaxRow = self.numberOfMaxRow;
     xpdButtonPageController.delegate = (id)parent;
     [parent addChildViewController:xpdButtonPageController];
     [xpdButtonPageController didMoveToParentViewController:parent];

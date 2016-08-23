@@ -14,6 +14,7 @@
 -(void) buttonGetClicked:(XpdButton *)button;
 @end
 @interface XpdButtonPageController : UIViewController <UIPageViewControllerDataSource, UIPageViewControllerDelegate, XpdButtons>
-@property (nonatomic, strong) NSArray *buttonProperties;
 @property (nonatomic, weak) id<XpdButtons> delegate;
+@property (nonatomic, strong) NSArray *buttonProperties;
+@property NSUInteger numberOfMaxRow;
 @end

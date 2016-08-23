@@ -25,7 +25,7 @@
 
 - (void) loadView {
     [super loadView];
-    self.buttonViewControllers = [[NSArray alloc] initWithArray:[self getViewControllersHoldingButtons:self.buttonProperties numberOfRowViewController:4]];
+    self.buttonViewControllers = [[NSArray alloc] initWithArray:[self getViewControllersHoldingButtons:self.buttonProperties numberOfRowViewController:self.numberOfMaxRow]];
     self.pageViewContrroller = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll
                                                                navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal
                                                                              options:nil];

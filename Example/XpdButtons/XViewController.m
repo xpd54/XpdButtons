@@ -17,20 +17,47 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSArray *buttonproperties = @[@{@"title" : @"button1",
+    NSArray *buttonproperties = @[@{@"title" : @"When does it open?",
                                     @"buttonInfo" : @{@"key" : @"value"}
                                     },
-                                  @{@"title" : @"button2",
+                                  @{@"title" : @"Show photos.",
                                     @"buttonInfo" : @{@"key" : @"value 2"}
                                     },
-                                  @{@"title" : @"button3",
+                                  @{@"title" : @"Accepts credit cards?",
                                     @"buttonInfo" : @{@"key" : @"value 3"}
                                     },
-                                  @{@"title" : @"button4",
+                                  @{@"title" : @"Does it have valet",
                                     @"buttonInfo" : @{@"key" : @"value 4"}
                                     },
                                   @{@"title" : @"button5",
                                     @"buttonInfo" : @{@"key" : @"value 5"}
+                                    },
+                                  @{@"title" : @"button6",
+                                    @"buttonInfo" : @{@"key" : @"value 6"}
+                                    },
+                                  @{@"title" : @"button7",
+                                    @"buttonInfo" : @{@"key" : @"value 6"}
+                                    },
+                                  @{@"title" : @"button8",
+                                    @"buttonInfo" : @{@"key" : @"value 6"}
+                                    },
+                                  @{@"title" : @"button9",
+                                    @"buttonInfo" : @{@"key" : @"value 6"}
+                                    },
+                                  @{@"title" : @"button10",
+                                    @"buttonInfo" : @{@"key" : @"value 6"}
+                                    },
+                                  @{@"title" : @"button11",
+                                    @"buttonInfo" : @{@"key" : @"value 6"}
+                                    },
+                                  @{@"title" : @"aa",
+                                    @"buttonInfo" : @{@"key" : @"value 6"}
+                                    },
+                                  @{@"title" : @"bb",
+                                    @"buttonInfo" : @{@"key" : @"value 6"}
+                                    },
+                                  @{@"title" : @"ccc",
+                                    @"buttonInfo" : @{@"key" : @"value 6"}
                                     },
                                   @{@"title" : @"button6",
                                     @"buttonInfo" : @{@"key" : @"value 6"}
@@ -49,7 +76,7 @@
                                                           options:NSLayoutFormatAlignAllTop
                                                           metrics:nil
                                                             views:views];
-    NSArray *VC = [NSLayoutConstraint constraintsWithVisualFormat:@"V:[view(140)]-0-|"
+    NSArray *VC = [NSLayoutConstraint constraintsWithVisualFormat:@"V:[view(200)]-0-|"
                                                           options:NSLayoutFormatAlignAllLeft
                                                           metrics:nil
                                                             views:views];

@@ -1,22 +1,22 @@
 //
-//  ButtonPageController.m
+//  XpdButtonPageController.m
 //  Button
 //
 //  Created by Ravi Prakash on 09/08/16.
 //  Copyright © 2016 Ravi Prakash. All rights reserved.
 //
 
-#import "ButtonPageController.h"
+#import "XpdButtonPageController.h"
 #define SPACING 6
 #define EVENPAD 0
 #define ODDPAD 0
 #define BUTTON_HEIGHT 34
-@interface ButtonPageController ()
+@interface XpdButtonPageController ()
 @property (nonatomic, strong) UIPageViewController *pageViewContrroller;
 @property (nonatomic, strong) NSArray *buttonViewControllers;
 @end
 
-@implementation ButtonPageController
+@implementation XpdButtonPageController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -36,7 +36,7 @@
                                        direction:UIPageViewControllerNavigationDirectionForward
                                         animated:false
                                       completion:nil];
-    UIPageControl *pageControl = [UIPageControl appearanceWhenContainedInInstancesOfClasses:@[[ButtonPageController class]]];
+    UIPageControl *pageControl = [UIPageControl appearanceWhenContainedInInstancesOfClasses:@[[XpdButtonPageController class]]];
     pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
     pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
     [self addChildViewController:self.pageViewContrroller];

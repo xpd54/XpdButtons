@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ButtonPageController.h"
+#import "XpdButtonPageController.h"
 
 /**
     XpdButtonAction is adopted by viewController where XpdButtonsView is gonna be used.

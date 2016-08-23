@@ -20,12 +20,12 @@
 }
 
 -(UIView *) getXpdButtonsViewForParentViewController:(UIViewController *)parent {
-    ButtonPageController *buttonPageController = [[ButtonPageController alloc] init];
-    buttonPageController.buttonProperties = self.buttonProperties;
-    buttonPageController.delegate = (id)parent;
-    [parent addChildViewController:buttonPageController];
-    [buttonPageController didMoveToParentViewController:parent];
-    return buttonPageController.view;
+    XpdButtonPageController *xpdButtonPageController = [[XpdButtonPageController alloc] init];
+    xpdButtonPageController.buttonProperties = self.buttonProperties;
+    xpdButtonPageController.delegate = (id)parent;
+    [parent addChildViewController:xpdButtonPageController];
+    [xpdButtonPageController didMoveToParentViewController:parent];
+    return xpdButtonPageController.view;
 }
 
 - (void) buttonGetClicked:(XpdButton *)button {

@@ -1,6 +1,6 @@
 #import <UIKit/UIKit.h>
 
-#import "ButtonPageController.h"
+#import "XpdButtonPageController.h"
 #import "XpdButton.h"
 #import "XpdButtonContainer.h"
 

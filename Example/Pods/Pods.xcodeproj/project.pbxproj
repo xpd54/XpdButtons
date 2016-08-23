@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		051EA178FE315C31032083E3131BD7D9 /* Pods-XpdButtons_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 073AD5A3774363769662AC5E5DC733DD /* Pods-XpdButtons_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		27E08FF7A793D380D0BA02D05F2E9F56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		598097379FA60AC06AF5840D9F47978F /* ButtonPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2006EACD8AB71D76C4FEE7EAB92ABEA3 /* ButtonPageController.m */; };
+		598097379FA60AC06AF5840D9F47978F /* XpdButtonPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2006EACD8AB71D76C4FEE7EAB92ABEA3 /* XpdButtonPageController.m */; };
 		6AE8D2EC22DF3F80131DDFE7A591989B /* XpdButtons-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47563C3A8E3406AD3386377480460247 /* XpdButtons-dummy.m */; };
 		7C249E3A10332EB9F297996030B827DB /* XpdButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF5ADBA9CB006EF8781B768D432DA78 /* XpdButton.m */; };
 		83F55BF5DE8CB08FF79ADFBE23AA0837 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
@@ -17,7 +17,7 @@
 		C3AD88F9328CF120E2FBEF91402F3FC4 /* Pods-XpdButtons_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CCF89747774DFFBA2397DC0DC8AD3B /* Pods-XpdButtons_Example-dummy.m */; };
 		D70F7A0EE921005A0F1BC36317A36211 /* XpdButtons-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2D93C63EE572AF3DB9B867E71ACFDFA /* XpdButtons-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7D629A66C10C6807762F574B1FE0D25 /* XpdButtonContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = C2802F86C530041E3E823B66CDB52BA1 /* XpdButtonContainer.m */; };
-		DF1A5D91A541AE88D986DB8F53AB0118 /* ButtonPageController.h in Headers */ = {isa = PBXBuildFile; fileRef = C04DA5D8B36FC85458404F13DEE81061 /* ButtonPageController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF1A5D91A541AE88D986DB8F53AB0118 /* XpdButtonPageController.h in Headers */ = {isa = PBXBuildFile; fileRef = C04DA5D8B36FC85458404F13DEE81061 /* XpdButtonPageController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4993AA095E3206838AEA230B9641E99 /* XpdButtonContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AD93EF18374FEE31394731A5AFAAF95 /* XpdButtonContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -34,7 +34,7 @@
 /* Begin PBXFileReference section */
 		073AD5A3774363769662AC5E5DC733DD /* Pods-XpdButtons_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XpdButtons_Example-umbrella.h"; sourceTree = "<group>"; };
 		1AD93EF18374FEE31394731A5AFAAF95 /* XpdButtonContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XpdButtonContainer.h; sourceTree = "<group>"; };
-		2006EACD8AB71D76C4FEE7EAB92ABEA3 /* ButtonPageController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ButtonPageController.m; sourceTree = "<group>"; };
+		2006EACD8AB71D76C4FEE7EAB92ABEA3 /* XpdButtonPageController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XpdButtonPageController.m; sourceTree = "<group>"; };
 		2570B710142EE7551B07220796DB7A93 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3361DF57559AF1F9C0ED9F2539AFA8A6 /* Pods-XpdButtons_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XpdButtons_Example-resources.sh"; sourceTree = "<group>"; };
 		339ABF87BFEE16F3363E52C990852993 /* Pods_XpdButtons_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XpdButtons_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,7 +49,7 @@
 		7E3ACB663FF4E7BBDE64FA66FC8D19E2 /* Pods-XpdButtons_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XpdButtons_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BCBFC07056C94214FE86CFBAC2DD3637 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C04DA5D8B36FC85458404F13DEE81061 /* ButtonPageController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ButtonPageController.h; sourceTree = "<group>"; };
+		C04DA5D8B36FC85458404F13DEE81061 /* XpdButtonPageController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XpdButtonPageController.h; sourceTree = "<group>"; };
 		C2802F86C530041E3E823B66CDB52BA1 /* XpdButtonContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XpdButtonContainer.m; sourceTree = "<group>"; };
 		D2D93C63EE572AF3DB9B867E71ACFDFA /* XpdButtons-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XpdButtons-umbrella.h"; sourceTree = "<group>"; };
 		D77ECC93FFDEE56632C12983CE749DAA /* Pods-XpdButtons_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XpdButtons_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -80,12 +80,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		13D3E37DF5CDF39D7600413666BF5A16 /* ButtonPageController */ = {
+		13D3E37DF5CDF39D7600413666BF5A16 /* XpdButtonPageController */ = {
 			isa = PBXGroup;
 			children = (
-				C04DA5D8B36FC85458404F13DEE81061 /* ButtonPageController.h */,
-				2006EACD8AB71D76C4FEE7EAB92ABEA3 /* ButtonPageController.m */,
+				C04DA5D8B36FC85458404F13DEE81061 /* XpdButtonPageController.h */,
+				2006EACD8AB71D76C4FEE7EAB92ABEA3 /* XpdButtonPageController.m */,
 			);
+			name = XpdButtonPageController;
 			path = ButtonPageController;
 			sourceTree = "<group>";
 		};
@@ -169,7 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				9590F80F0B2D8B781FA983F10A634147 /* XpdButtonContainer */,
-				13D3E37DF5CDF39D7600413666BF5A16 /* ButtonPageController */,
+				13D3E37DF5CDF39D7600413666BF5A16 /* XpdButtonPageController */,
 				C22E488D63993A394765B2DFFF5FE9BF /* XpdButton */,
 			);
 			path = Classes;
@@ -234,7 +235,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF1A5D91A541AE88D986DB8F53AB0118 /* ButtonPageController.h in Headers */,
+				DF1A5D91A541AE88D986DB8F53AB0118 /* XpdButtonPageController.h in Headers */,
 				903E5CC23493F6D109C1835CCE730BC4 /* XpdButton.h in Headers */,
 				F4993AA095E3206838AEA230B9641E99 /* XpdButtonContainer.h in Headers */,
 				D70F7A0EE921005A0F1BC36317A36211 /* XpdButtons-umbrella.h in Headers */,
@@ -311,7 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				598097379FA60AC06AF5840D9F47978F /* ButtonPageController.m in Sources */,
+				598097379FA60AC06AF5840D9F47978F /* XpdButtonPageController.m in Sources */,
 				7C249E3A10332EB9F297996030B827DB /* XpdButton.m in Sources */,
 				D7D629A66C10C6807762F574B1FE0D25 /* XpdButtonContainer.m in Sources */,
 				6AE8D2EC22DF3F80131DDFE7A591989B /* XpdButtons-dummy.m in Sources */,

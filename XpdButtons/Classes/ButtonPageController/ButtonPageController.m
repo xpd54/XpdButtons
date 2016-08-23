@@ -7,6 +7,10 @@
 //
 
 #import "ButtonPageController.h"
+#define SPACING 6
+#define EVENPAD 54
+#define ODDPAD 34
+#define BUTTON_HEIGHT 34
 @interface ButtonPageController ()
 @property (nonatomic, strong) UIPageViewController *pageViewContrroller;
 @property (nonatomic, strong) NSArray *buttonViewControllers;
@@ -90,12 +94,142 @@
     return 0;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (void) buttonGetClicked:(XpdButton *)button {
     [self.delegate buttonGetClicked:button];
+}
+
+#pragma Buttons setup methods (Every thing which finally return array of viewcontroller)
+
+- (NSArray *) getViewControllersHoldingButtons:(NSArray *) buttonTitles numberOfRowViewController: (NSInteger)numberOfRow {
+    NSArray *views = [self getArrayOfViewForButtonTitles:buttonTitles];
+    NSMutableArray *viewControllers = [[NSMutableArray alloc] init];
+    // views have 34 height
+    for (int i = 0; i < views.count;) {
+        NSArray *subArray = [views subarrayWithRange:NSMakeRange(i, MIN(numberOfRow, views.count - i))];
+        UIViewController *viewController = [self getViewControllerWithViewArray:subArray];
+        [viewControllers addObject:viewController];
+        i += numberOfRow;
+    }
+    return viewControllers;
+}
+
+- (UIViewController *) getViewControllerWithViewArray:(NSArray *)views {
+    UIViewController *viewcontroller = [[UIViewController alloc] init];
+    for (int i = 0; i < views.count; i++) {
+        UIView *view = [views objectAtIndex:i];
+        UIView *spacerLeft = [[UIView alloc] init];
+        UIView *spacerRight = [[UIView alloc] init];
+        view.translatesAutoresizingMaskIntoConstraints = false;
+        spacerLeft.translatesAutoresizingMaskIntoConstraints = false;
+        spacerRight.translatesAutoresizingMaskIntoConstraints = false;
+        [viewcontroller.view addSubview:view];
+        [viewcontroller.view addSubview:spacerRight];
+        [viewcontroller.view addSubview:spacerLeft];
+        NSString *viewKey = [NSString stringWithFormat:@"view%d", i];
+        int verticalPading = i == 0 ? SPACING : ((i + 1) * SPACING) + i * BUTTON_HEIGHT;
+        int margin  = i % 2 ? ODDPAD : EVENPAD;
+        NSDictionary *metrics = @{@"margin": [NSNumber numberWithInt:margin],
+                                  @"vPading" : [NSNumber numberWithInt:verticalPading]
+                                  };
+        NSDictionary *views = @{viewKey : view,
+                                @"spacerLeft" : spacerLeft,
+                                @"spacerRight" : spacerRight};
+        NSString *hcString = [NSString stringWithFormat:@"H:|-0-[spacerLeft(spacerRight)]-margin-[%@]-margin-[spacerRight]-0-|", viewKey];
+        NSString *vcString = [NSString stringWithFormat:@"V:|-vPading-[%@]", viewKey];
+        NSArray *horizontalConstraint = [NSLayoutConstraint constraintsWithVisualFormat:hcString
+                                                                                options:0
+                                                                                metrics:metrics
+                                                                                  views:views];
+        NSArray *verticalConstraint = [NSLayoutConstraint constraintsWithVisualFormat:vcString
+                                                                              options:0
+                                                                              metrics:metrics
+                                                                                views:views];
+        [viewcontroller.view addConstraints: horizontalConstraint];
+        [viewcontroller.view addConstraints:verticalConstraint];
+    }
+    return viewcontroller;
+}
+
+-(NSArray *) getArrayOfViewForButtonTitles:(NSArray *)titles {
+    NSArray *buttonArrayFitToWidth = [self getButtonArrayFitToWidth:titles];
+    NSMutableArray *viewArray = [[NSMutableArray alloc] init];
+    for (int i = 0; i < buttonArrayFitToWidth.count; i++) {
+        NSArray *buttons = [buttonArrayFitToWidth objectAtIndex:i];
+        NSMutableDictionary *views = [[NSMutableDictionary alloc] init];
+        UIView *baseView = [[UIView alloc] init];
+        NSString *horizontalConstraintString = @"H:|-0-";
+        NSString *verticalConstraintString = [NSString stringWithFormat:@"V:|-0-[button%d0]-0-|",i];
+        for (int j = 0; j < buttons.count; j++) {
+            UIButton *button = [buttons objectAtIndex:j];
+            button.translatesAutoresizingMaskIntoConstraints = false;
+            [baseView addSubview:button];
+            NSString *buttonString = [NSString stringWithFormat:@"button%d%d", i,j];
+            [views setObject:button forKey:buttonString];
+            if (j == buttons.count - 1) {
+                horizontalConstraintString = [horizontalConstraintString stringByAppendingString:[NSString stringWithFormat:@"[%@]-0-|", buttonString]];
+            } else {
+                horizontalConstraintString = [horizontalConstraintString stringByAppendingString:[NSString stringWithFormat:@"[%@]-%d-", buttonString, SPACING]];
+            }
+        }
+        NSArray *horizontalConstraint = [NSLayoutConstraint constraintsWithVisualFormat:horizontalConstraintString
+                                                                                options:NSLayoutFormatAlignAllTop | NSLayoutFormatAlignAllBottom
+                                                                                metrics:nil
+                                                                                  views:views];
+        NSArray *verticalConstraint = [NSLayoutConstraint constraintsWithVisualFormat:verticalConstraintString
+                                                                              options:0
+                                                                              metrics:nil
+                                                                                views:views];
+        [baseView addConstraints:horizontalConstraint];
+        [baseView addConstraints:verticalConstraint];
+        [viewArray addObject:baseView];
+    }
+    return viewArray;
+}
+
+- (NSArray *) getButtonArrayFitToWidth:(NSArray *) titles {
+    NSMutableArray *buttonArray = [self getAllButtonForTitles:titles];
+    NSMutableArray *resultArray = [[NSMutableArray alloc] init];
+    for (int i = 0; buttonArray.count > 0; i++) {
+        NSMutableArray *row = [[NSMutableArray alloc] init];
+        CGFloat width = 0;
+        if(i % 2 == 0) {
+            width = 2 * EVENPAD;
+        } else {
+            width = 2 * ODDPAD;
+        }
+        for(int j = 0; buttonArray.count > 0; j++) {
+            UIButton *firstButton = (UIButton *)[buttonArray firstObject];
+            width = width + firstButton.frame.size.width + j * SPACING;
+            if (width <= self.view.frame.size.width) {
+                UIButton *button = [buttonArray firstObject];
+                [row addObject:button];
+                [buttonArray removeObjectAtIndex:0];
+            } else {
+                break;
+            }
+        }
+        row.count > 0 ? [resultArray addObject:row] : nil;
+    }
+    return resultArray;
+}
+
+- (NSMutableArray *) getAllButtonForTitles:(NSArray *) titles {
+    NSMutableArray *buttonArray = [[NSMutableArray alloc] init];
+    [titles enumerateObjectsUsingBlock:^(NSString  *_Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        UIButton *button = [[UIButton alloc] init];
+        [button setTitle:[self formatedTitle:obj] forState:UIControlStateNormal];
+        [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [button setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
+        [button sizeToFit];
+        button.layer.borderColor = [UIColor blackColor].CGColor;
+        button.layer.borderWidth = 1.0;
+        button.layer.cornerRadius = 3.0;
+        [buttonArray addObject:button];
+    }];
+    return buttonArray;
+}
+
+- (NSString *) formatedTitle:(NSString *) titleString {
+    return [NSString stringWithFormat:@" %@ ", titleString];
 }
 @end

@@ -37,30 +37,6 @@
                                     },
                                   @{@"title" : @"button7",
                                     @"buttonInfo" : @{@"key" : @"value 6"}
-                                    },
-                                  @{@"title" : @"button8",
-                                    @"buttonInfo" : @{@"key" : @"value 6"}
-                                    },
-                                  @{@"title" : @"button9",
-                                    @"buttonInfo" : @{@"key" : @"value 6"}
-                                    },
-                                  @{@"title" : @"button10",
-                                    @"buttonInfo" : @{@"key" : @"value 6"}
-                                    },
-                                  @{@"title" : @"button11",
-                                    @"buttonInfo" : @{@"key" : @"value 6"}
-                                    },
-                                  @{@"title" : @"aa",
-                                    @"buttonInfo" : @{@"key" : @"value 6"}
-                                    },
-                                  @{@"title" : @"bb",
-                                    @"buttonInfo" : @{@"key" : @"value 6"}
-                                    },
-                                  @{@"title" : @"ccc",
-                                    @"buttonInfo" : @{@"key" : @"value 6"}
-                                    },
-                                  @{@"title" : @"button6",
-                                    @"buttonInfo" : @{@"key" : @"value 6"}
                                     }
                                   ];
 

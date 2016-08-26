@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
 s.name             = 'XpdButtons'
-s.version          = '0.1.1'
-s.summary          = 'A UIView which provide multiple buttons arranged in pageViewController.'
+s.version          = '1.0.0'
+s.summary          = 'A UIView which provide multiple buttons arranged according to title lenght in pageViewController.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,16 +17,16 @@ s.summary          = 'A UIView which provide multiple buttons arranged in pageVi
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-s.description      = 'A UIView which provide multiple buttons arranged in pageViewController. Button layout depends on total number of buttons you want. It will club 4 buttons in one page other buttons will be in next page (which will comeup after horizontal scroll) Buttons will looks like
-..[####] [####]
-[######] [#######]. PS :- Check screenshot on home page'
+s.description      = <<-DESC
+                     A UIView which provide multiple buttons arranged in pageViewController. Button layout depends on total number of buttons you want. It will club buttons dynamically according to length of title in one page other buttons will be in next page (which will comeup after horizontal scroll).
+                     DESC
 
 s.homepage         = 'https://github.com/xpd54/XpdButtons'
-# s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+s.screenshots      = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'Ravi Prakash' => 'raviprakash.xpd54@gmail.com' }
 s.source           = { :git => 'https://github.com/xpd54/XpdButtons.git', :tag => s.version.to_s }
-# s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+s.social_media_url = 'https://twitter.com/xpd54'
 
 s.ios.deployment_target = '8.0'
 

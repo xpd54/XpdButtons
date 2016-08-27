@@ -47,6 +47,9 @@
 - (nullable UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
     NSInteger vcIndex = [self.buttonViewControllers indexOfObject:viewController];
     NSInteger previousVCIndex = vcIndex - 1;
+    if (self.buttonViewControllers.count == 1) {
+        return nil;
+    }
     if (!(previousVCIndex >= 0)) {
         return (UIViewController *)self.buttonViewControllers.lastObject;
     }
@@ -59,8 +62,11 @@
 - (nullable UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
     NSInteger vcIndex = [self.buttonViewControllers indexOfObject:viewController];
     NSInteger nextVCIndex = vcIndex + 1;
+    if (self.buttonViewControllers.count == 1) {
+        return nil;
+    }
     if (!(nextVCIndex < self.buttonViewControllers.count)) {
-        return (UIViewController *)[self.buttonViewControllers objectAtIndex:0];
+        return (UIViewController *)self.buttonViewControllers.firstObject;
     }
     if (!(nextVCIndex > 0)) {
         return nil;

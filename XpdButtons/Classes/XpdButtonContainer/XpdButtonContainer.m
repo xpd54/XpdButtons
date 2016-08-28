@@ -21,9 +21,15 @@
 
 -(UIView *) getXpdButtonsViewForParentViewController:(UIViewController *)parent {
     XpdButtonPageController *xpdButtonPageController = [[XpdButtonPageController alloc] init];
+    xpdButtonPageController.delegate = (id)parent;
     xpdButtonPageController.buttonProperties = self.buttonProperties;
     xpdButtonPageController.numberOfMaxRow = self.numberOfMaxRow;
-    xpdButtonPageController.delegate = (id)parent;
+    xpdButtonPageController.buttonBorderColor = self.buttonBorderColor;
+    xpdButtonPageController.buttonTitleColor = self.buttonTitleColor;
+    xpdButtonPageController.buttonHighlightedTitleColor =  self.buttonHighlightedTitleColor;
+    xpdButtonPageController.pageIndicatorTintColor = self.pageIndicatorTintColor;
+    xpdButtonPageController.currentPageIndicatorTintColor = self.currentPageIndicatorTintColor;
+
     [parent addChildViewController:xpdButtonPageController];
     [xpdButtonPageController didMoveToParentViewController:parent];
     return xpdButtonPageController.view;

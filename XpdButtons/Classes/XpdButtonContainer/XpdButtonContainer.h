@@ -51,9 +51,34 @@
 @property (nonatomic, strong) NSArray *buttonProperties;
 
 /**
- Number of maximum row of buttons in one pageView. It will dynamically set other buttons to diffrent pageView.
+ Number of maximum row of buttons in one pageView. It will dynamically set other buttons to diffrent pageView. Default is 2.
  */
-@property NSUInteger numberOfMaxRow;
+@property NSInteger numberOfMaxRow;
+
+/**
+ Set button border color. Default is black.
+ */
+@property (nonatomic, strong) UIColor *buttonBorderColor;
+
+/**
+ Set Button title color. Default is black.
+ */
+@property (nonatomic, strong) UIColor *buttonTitleColor;
+
+/**
+ Set Button title color in Highlighted condition. Default is red.
+ */
+@property (nonatomic, strong) UIColor *buttonHighlightedTitleColor;
+
+/**
+ Set Page Indicator Tint color. Default is lightGray.
+ */
+@property (nonatomic, strong) UIColor *pageIndicatorTintColor;
+
+/**
+ Set Current Page indicator tint color. Default is black.
+ */
+@property (nonatomic, strong) UIColor *currentPageIndicatorTintColor;
 
 /**
  Delegate to use XpdButtonAction protocol.
@@ -67,11 +92,11 @@
  @param parent viewController where you gonna use the buttons view.
  @return: UIView view which contains all buttons with multiple page.
  @code
-        XpdButtonContainer *buttonPageController = [[XpdButtonContainer alloc] init];
-        buttonPageController.delegate = self;
-        buttonPageController.buttonProperties = buttonproperties;
-        buttonPageController.numberOfMaxRow = 4;
-        UIView *buttonView = [buttonPageController getXpdButtonsViewForParentViewController:self];
+    XpdButtonContainer *buttonPageController = [[XpdButtonContainer alloc] init];
+    buttonPageController.delegate = self;
+    buttonPageController.buttonProperties = buttonproperties;
+    buttonPageController.numberOfMaxRow = 4;
+    UIView *buttonView = [buttonPageController getXpdButtonsViewForParentViewController:self];
  @endcode
  @see buttonProperties
  */

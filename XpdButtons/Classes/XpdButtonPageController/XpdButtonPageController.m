@@ -11,6 +11,7 @@
 #define EVENPAD 0
 #define ODDPAD 0
 #define BUTTON_HEIGHT 34
+#define DEFAULT_COLOR [UIColor blackColor]
 @interface XpdButtonPageController ()
 @property (nonatomic, strong) UIPageViewController *pageViewContrroller;
 @property (nonatomic, strong) NSArray *buttonViewControllers;
@@ -25,7 +26,9 @@
 
 - (void) loadView {
     [super loadView];
-    self.buttonViewControllers = [[NSArray alloc] initWithArray:[self getViewControllersHoldingButtons:self.buttonProperties numberOfRowViewController:self.numberOfMaxRow]];
+    NSInteger *numberOfMaxRow;
+    numberOfMaxRow = self.numberOfMaxRow ? self.numberOfMaxRow : 2;
+    self.buttonViewControllers = [[NSArray alloc] initWithArray:[self getViewControllersHoldingButtons:self.buttonProperties numberOfRowViewController:numberOfMaxRow]];
     self.pageViewContrroller = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll
                                                                navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal
                                                                              options:nil];
@@ -37,8 +40,10 @@
                                         animated:false
                                       completion:nil];
     UIPageControl *pageControl = [UIPageControl appearanceWhenContainedInInstancesOfClasses:@[[XpdButtonPageController class]]];
-    pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
-    pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
+    UIColor *pgITColor = self.pageIndicatorTintColor ? self.pageIndicatorTintColor : [UIColor lightGrayColor];
+    pageControl.pageIndicatorTintColor = pgITColor;
+    UIColor *cpITColor = self.currentPageIndicatorTintColor ? self.currentPageIndicatorTintColor : DEFAULT_COLOR;
+    pageControl.currentPageIndicatorTintColor = cpITColor;
     [self addChildViewController:self.pageViewContrroller];
     [self.view addSubview:self.pageViewContrroller.view];
     [self.pageViewContrroller didMoveToParentViewController:self];
@@ -208,10 +213,20 @@
         [button setTitle:[self formatedTitle:[obj objectForKey:KEYBOARD_BUTTON_TITLE]] forState:UIControlStateNormal];
         button.buttonInfo = [obj objectForKey:KEYBOARD_BUTTON_INFO];
         [button addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchDown];
-        [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [button setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
+
+        UIColor *normalTitleColor;
+        normalTitleColor = self.buttonTitleColor ? self.buttonTitleColor : DEFAULT_COLOR;
+        [button setTitleColor:normalTitleColor forState:UIControlStateNormal];
+
+        UIColor *highlightedTitleColor;
+        highlightedTitleColor = self.buttonHighlightedTitleColor ? self.buttonHighlightedTitleColor : [UIColor redColor];
+        [button setTitleColor:highlightedTitleColor forState:UIControlStateHighlighted];
+
         [button sizeToFit];
-        button.layer.borderColor = [UIColor blackColor].CGColor;
+
+        CGColorRef *borderColor;
+        borderColor = self.buttonBorderColor ? self.buttonBorderColor.CGColor : DEFAULT_COLOR.CGColor;
+        [button.layer setBorderColor:borderColor];
         button.layer.borderWidth = 1.0;
         button.layer.cornerRadius = 3.0;
         [buttonArray addObject:button];

@@ -16,5 +16,10 @@
 @interface XpdButtonPageController : UIViewController <UIPageViewControllerDataSource, UIPageViewControllerDelegate, XpdButtons>
 @property (nonatomic, weak) id<XpdButtons> delegate;
 @property (nonatomic, strong) NSArray *buttonProperties;
-@property NSUInteger numberOfMaxRow;
+@property NSInteger numberOfMaxRow;
+@property (nonatomic, strong) UIColor *buttonBorderColor;
+@property (nonatomic, strong) UIColor *buttonTitleColor;
+@property (nonatomic, strong) UIColor *buttonHighlightedTitleColor;
+@property (nonatomic, strong) UIColor *pageIndicatorTintColor;
+@property (nonatomic, strong) UIColor *currentPageIndicatorTintColor;
 @end

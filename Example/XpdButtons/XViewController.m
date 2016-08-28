@@ -46,10 +46,12 @@
 
     XpdButtonContainer *buttonPageController = [[XpdButtonContainer alloc] init];
     buttonPageController.delegate = self;
-    buttonPageController.buttonProperties = buttonproperties;
-    // Number of maximum row in one page
-    buttonPageController.numberOfMaxRow = 3;
 
+    // Set buttonproperties
+    buttonPageController.buttonProperties = buttonproperties;
+
+    // Set number
+    buttonPageController.numberOfMaxRow = 3;
     // ButtonView which have buttons aranged in page view.
     UIView *buttonView = [buttonPageController getXpdButtonsViewForParentViewController:self];
 
@@ -58,14 +60,16 @@
 
     // Set the view as inputView
     [self.inputTextView setInputView:buttonView];
+    [self.inputTextView setText:@"Click"];
 
+    // Constraints of textView
     [self.view addSubview:self.inputTextView];
     NSDictionary *views = @{@"textView" : self.inputTextView};
-    NSArray *textViewHC = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[textView]-20-|"
+    NSArray *textViewHC = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[textView]-0-|"
                                                                   options:NSLayoutFormatAlignAllTop
                                                                   metrics:nil
                                                                     views:views];
-    NSArray *textViewVC = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-50-[textView(30)]"
+    NSArray *textViewVC = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[textView]-0-|"
                                                                   options:NSLayoutFormatAlignAllCenterX
                                                                   metrics:nil
                                                                     views:views];

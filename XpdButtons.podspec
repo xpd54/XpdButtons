@@ -22,7 +22,7 @@ s.description      = <<-DESC
                      DESC
 
 s.homepage         = 'https://github.com/xpd54/XpdButtons'
-s.screenshots      = 'https://github.com/xpd54/XpdButtons/blob/release/1.0.0/Example/Screenshots/screenshots_1.jpg', 'https://github.com/xpd54/XpdButtons/blob/release/1.0.0/Example/Screenshots/screenshots_2.jpg', 'https://github.com/xpd54/XpdButtons/blob/release/1.0.0/Example/Screenshots/screenshots_3.jpg'
+s.screenshots      = 'https://raw.githubusercontent.com/xpd54/XpdButtons/master/Example/Screenshots/screenshots_1.jpg', 'https://raw.githubusercontent.com/xpd54/XpdButtons/master/Example/Screenshots/screenshots_2.jpg', 'https://raw.githubusercontent.com/xpd54/XpdButtons/master/Example/Screenshots/screenshots_3.jpg'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'Ravi Prakash' => 'raviprakash.xpd54@gmail.com' }
 s.source           = { :git => 'https://github.com/xpd54/XpdButtons.git', :tag => s.version.to_s }

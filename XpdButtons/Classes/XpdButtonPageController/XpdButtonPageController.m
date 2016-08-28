@@ -26,9 +26,9 @@
 
 - (void) loadView {
     [super loadView];
-    NSInteger numberOfMaxRow;
-    numberOfMaxRow = self.numberOfMaxRow ? self.numberOfMaxRow : 2;
-    self.buttonViewControllers = [[NSArray alloc] initWithArray:[self getViewControllersHoldingButtons:self.buttonProperties numberOfRowViewController:numberOfMaxRow]];
+    NSInteger maxRow;
+    maxRow = self.numberOfMaxRow ? self.numberOfMaxRow : 2;
+    self.buttonViewControllers = [[NSArray alloc] initWithArray:[self getViewControllersHoldingButtons:self.buttonProperties numberOfRowViewController:maxRow]];
     self.pageViewContrroller = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll
                                                                navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal
                                                                              options:nil];
@@ -223,10 +223,7 @@
         [button setTitleColor:highlightedTitleColor forState:UIControlStateHighlighted];
 
         [button sizeToFit];
-
-        CGColorRef borderColor;
-        borderColor = self.buttonBorderColor ? self.buttonBorderColor.CGColor : DEFAULT_COLOR.CGColor;
-        [button.layer setBorderColor:borderColor];
+        [button.layer setBorderColor:(self.buttonBorderColor ? self.buttonBorderColor.CGColor : DEFAULT_COLOR.CGColor)];
         button.layer.borderWidth = 1.0;
         button.layer.cornerRadius = 3.0;
         [buttonArray addObject:button];

@@ -53,7 +53,7 @@
 /**
  Number of maximum row of buttons in one pageView. It will dynamically set other buttons to diffrent pageView. Default is 2.
  */
-@property NSInteger numberOfMaxRow;
+@property (nonatomic, assign) NSInteger numberOfMaxRow;
 
 /**
  Set button border color. Default is black.

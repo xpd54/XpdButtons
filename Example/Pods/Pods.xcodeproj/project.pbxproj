@@ -1,568 +1,1317 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		051EA178FE315C31032083E3131BD7D9 /* Pods-XpdButtons_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 073AD5A3774363769662AC5E5DC733DD /* Pods-XpdButtons_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E50F0F870E73836F1D8E254E589E49B /* XpdButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA89E3D2244CE9AE1BCF378E74956FF /* XpdButton.m */; };
-		27E08FF7A793D380D0BA02D05F2E9F56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		288F9491CA5D9469BA41E1D5BE6E654A /* XpdButtonContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FCE6F6BD02B15E33C57CEEBAA60A0 /* XpdButtonContainer.m */; };
-		4610D8CCF903637778E44BF66DACEB02 /* XpdButtonContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = E98F46584BFA7CECCD0F3DC0A946771D /* XpdButtonContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		523A0BE4D35CBD93AF420CFA03BF7FD4 /* XpdButtonPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = D13FB85021604598F8EE6E6AF95A0587 /* XpdButtonPageController.m */; };
-		83F55BF5DE8CB08FF79ADFBE23AA0837 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		8EE7A238927E9875220B49D455D9275D /* XpdButtons-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2D93C63EE572AF3DB9B867E71ACFDFA /* XpdButtons-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		995077B5D514163161F893007EBCC1B7 /* XpdButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A0AC30C72B873F225D634ADFFB46F71 /* XpdButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BB79CA96E436431CA7F1143163CADD7E /* XpdButtons-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47563C3A8E3406AD3386377480460247 /* XpdButtons-dummy.m */; };
-		C312C3B2E6C554CBEDACC26181DCF7CB /* XpdButtonPageController.h in Headers */ = {isa = PBXBuildFile; fileRef = 44E8890B6C1D4B747BA2C72E18D27ABC /* XpdButtonPageController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C3AD88F9328CF120E2FBEF91402F3FC4 /* Pods-XpdButtons_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CCF89747774DFFBA2397DC0DC8AD3B /* Pods-XpdButtons_Example-dummy.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A382639BC80007200770C1748329C577 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F560F4525E748AF0AD98B38B27D67873;
-			remoteInfo = XpdButtons;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		073AD5A3774363769662AC5E5DC733DD /* Pods-XpdButtons_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XpdButtons_Example-umbrella.h"; sourceTree = "<group>"; };
-		1A0AC30C72B873F225D634ADFFB46F71 /* XpdButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XpdButton.h; sourceTree = "<group>"; };
-		2570B710142EE7551B07220796DB7A93 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3361DF57559AF1F9C0ED9F2539AFA8A6 /* Pods-XpdButtons_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XpdButtons_Example-resources.sh"; sourceTree = "<group>"; };
-		339ABF87BFEE16F3363E52C990852993 /* Pods_XpdButtons_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XpdButtons_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3FCBDA1E4DD85536405E05D5DA230DEA /* Pods-XpdButtons_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XpdButtons_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		44E8890B6C1D4B747BA2C72E18D27ABC /* XpdButtonPageController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XpdButtonPageController.h; sourceTree = "<group>"; };
-		47563C3A8E3406AD3386377480460247 /* XpdButtons-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XpdButtons-dummy.m"; sourceTree = "<group>"; };
-		53945CECC224FB002BAB20CBB95E1C2A /* XpdButtons.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XpdButtons.xcconfig; sourceTree = "<group>"; };
-		597EB552D9251DC2DEEDECE0271CC08A /* Pods-XpdButtons_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XpdButtons_Example.release.xcconfig"; sourceTree = "<group>"; };
-		69CCF89747774DFFBA2397DC0DC8AD3B /* Pods-XpdButtons_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XpdButtons_Example-dummy.m"; sourceTree = "<group>"; };
-		791FCE6F6BD02B15E33C57CEEBAA60A0 /* XpdButtonContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XpdButtonContainer.m; sourceTree = "<group>"; };
-		7B98C3EA449699273B8248500CF7706E /* XpdButtons.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = XpdButtons.modulemap; sourceTree = "<group>"; };
-		7E3ACB663FF4E7BBDE64FA66FC8D19E2 /* Pods-XpdButtons_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XpdButtons_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BCBFC07056C94214FE86CFBAC2DD3637 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BEA89E3D2244CE9AE1BCF378E74956FF /* XpdButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XpdButton.m; sourceTree = "<group>"; };
-		D13FB85021604598F8EE6E6AF95A0587 /* XpdButtonPageController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XpdButtonPageController.m; sourceTree = "<group>"; };
-		D2D93C63EE572AF3DB9B867E71ACFDFA /* XpdButtons-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XpdButtons-umbrella.h"; sourceTree = "<group>"; };
-		D77ECC93FFDEE56632C12983CE749DAA /* Pods-XpdButtons_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XpdButtons_Example-frameworks.sh"; sourceTree = "<group>"; };
-		DE25A18B91FC1BD47CE0654CBB022CD5 /* XpdButtons-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XpdButtons-prefix.pch"; sourceTree = "<group>"; };
-		E1CF12CA6A1BA7020C3BFCCE635A1517 /* Pods-XpdButtons_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XpdButtons_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		E98F46584BFA7CECCD0F3DC0A946771D /* XpdButtonContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XpdButtonContainer.h; sourceTree = "<group>"; };
-		EEB776C7BA5FF180B4DF79241F7B58A6 /* XpdButtons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XpdButtons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4630A5CB126EFDADBEF6E4C0C78D6E0 /* Pods-XpdButtons_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-XpdButtons_Example.modulemap"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		3FFB4BC0C2F0C6DE5EBCF8580CDC40FB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				27E08FF7A793D380D0BA02D05F2E9F56 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		567C182D5DC8B7B36DAA05C23C46C543 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				83F55BF5DE8CB08FF79ADFBE23AA0837 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		23C7A40818E8D101957C0971BF5DCFCE /* XpdButtons */ = {
-			isa = PBXGroup;
-			children = (
-				663E016349BEC642B1CFC37C3CDBD601 /* Classes */,
-			);
-			path = XpdButtons;
-			sourceTree = "<group>";
-		};
-		663E016349BEC642B1CFC37C3CDBD601 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				B662B9C829D57D91BDE35CFB6B9D5181 /* XpdButton */,
-				D9D916068C895468304D5D2E2E8D3572 /* XpdButtonContainer */,
-				8C182567D83CA8282D94C38370EEAD75 /* XpdButtonPageController */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		7D5BBF486FE8904342965BC57F46B96D /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9B2A574B4653839198EEF059F33637BE /* Pods-XpdButtons_Example */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				8931721B25D29394CA69C0EB9E8A4B71 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				C424BDC0457C5C8FF8D6AA4B34D42E73 /* Products */,
-				7D5BBF486FE8904342965BC57F46B96D /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		8931721B25D29394CA69C0EB9E8A4B71 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C5F864275A5B468EB606B7A6A3BA4709 /* XpdButtons */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		8C182567D83CA8282D94C38370EEAD75 /* XpdButtonPageController */ = {
-			isa = PBXGroup;
-			children = (
-				44E8890B6C1D4B747BA2C72E18D27ABC /* XpdButtonPageController.h */,
-				D13FB85021604598F8EE6E6AF95A0587 /* XpdButtonPageController.m */,
-			);
-			path = XpdButtonPageController;
-			sourceTree = "<group>";
-		};
-		9B2A574B4653839198EEF059F33637BE /* Pods-XpdButtons_Example */ = {
-			isa = PBXGroup;
-			children = (
-				2570B710142EE7551B07220796DB7A93 /* Info.plist */,
-				F4630A5CB126EFDADBEF6E4C0C78D6E0 /* Pods-XpdButtons_Example.modulemap */,
-				7E3ACB663FF4E7BBDE64FA66FC8D19E2 /* Pods-XpdButtons_Example-acknowledgements.markdown */,
-				E1CF12CA6A1BA7020C3BFCCE635A1517 /* Pods-XpdButtons_Example-acknowledgements.plist */,
-				69CCF89747774DFFBA2397DC0DC8AD3B /* Pods-XpdButtons_Example-dummy.m */,
-				D77ECC93FFDEE56632C12983CE749DAA /* Pods-XpdButtons_Example-frameworks.sh */,
-				3361DF57559AF1F9C0ED9F2539AFA8A6 /* Pods-XpdButtons_Example-resources.sh */,
-				073AD5A3774363769662AC5E5DC733DD /* Pods-XpdButtons_Example-umbrella.h */,
-				3FCBDA1E4DD85536405E05D5DA230DEA /* Pods-XpdButtons_Example.debug.xcconfig */,
-				597EB552D9251DC2DEEDECE0271CC08A /* Pods-XpdButtons_Example.release.xcconfig */,
-			);
-			name = "Pods-XpdButtons_Example";
-			path = "Target Support Files/Pods-XpdButtons_Example";
-			sourceTree = "<group>";
-		};
-		9F951BA07A09CD01D1836173B5DBEA27 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BCBFC07056C94214FE86CFBAC2DD3637 /* Info.plist */,
-				7B98C3EA449699273B8248500CF7706E /* XpdButtons.modulemap */,
-				53945CECC224FB002BAB20CBB95E1C2A /* XpdButtons.xcconfig */,
-				47563C3A8E3406AD3386377480460247 /* XpdButtons-dummy.m */,
-				DE25A18B91FC1BD47CE0654CBB022CD5 /* XpdButtons-prefix.pch */,
-				D2D93C63EE572AF3DB9B867E71ACFDFA /* XpdButtons-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/XpdButtons";
-			sourceTree = "<group>";
-		};
-		B662B9C829D57D91BDE35CFB6B9D5181 /* XpdButton */ = {
-			isa = PBXGroup;
-			children = (
-				1A0AC30C72B873F225D634ADFFB46F71 /* XpdButton.h */,
-				BEA89E3D2244CE9AE1BCF378E74956FF /* XpdButton.m */,
-			);
-			path = XpdButton;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		C424BDC0457C5C8FF8D6AA4B34D42E73 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				339ABF87BFEE16F3363E52C990852993 /* Pods_XpdButtons_Example.framework */,
-				EEB776C7BA5FF180B4DF79241F7B58A6 /* XpdButtons.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C5F864275A5B468EB606B7A6A3BA4709 /* XpdButtons */ = {
-			isa = PBXGroup;
-			children = (
-				9F951BA07A09CD01D1836173B5DBEA27 /* Support Files */,
-				23C7A40818E8D101957C0971BF5DCFCE /* XpdButtons */,
-			);
-			name = XpdButtons;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		D9D916068C895468304D5D2E2E8D3572 /* XpdButtonContainer */ = {
-			isa = PBXGroup;
-			children = (
-				E98F46584BFA7CECCD0F3DC0A946771D /* XpdButtonContainer.h */,
-				791FCE6F6BD02B15E33C57CEEBAA60A0 /* XpdButtonContainer.m */,
-			);
-			path = XpdButtonContainer;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		589F487E8C7A065B6370FD76DD9C75CC /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				051EA178FE315C31032083E3131BD7D9 /* Pods-XpdButtons_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B3FEB5A75E7A90650DB2B5F1CB693CAD /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				995077B5D514163161F893007EBCC1B7 /* XpdButton.h in Headers */,
-				4610D8CCF903637778E44BF66DACEB02 /* XpdButtonContainer.h in Headers */,
-				C312C3B2E6C554CBEDACC26181DCF7CB /* XpdButtonPageController.h in Headers */,
-				8EE7A238927E9875220B49D455D9275D /* XpdButtons-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		02B22214633E1419D24EBC1BF7DECDF1 /* Pods-XpdButtons_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B63B636A646D5D82653996C7F7B392F9 /* Build configuration list for PBXNativeTarget "Pods-XpdButtons_Example" */;
-			buildPhases = (
-				91D3E02691EA261564DE3C43A5666D6A /* Sources */,
-				3FFB4BC0C2F0C6DE5EBCF8580CDC40FB /* Frameworks */,
-				589F487E8C7A065B6370FD76DD9C75CC /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D575882CEECC22F8AED50CC043405DD1 /* PBXTargetDependency */,
-			);
-			name = "Pods-XpdButtons_Example";
-			productName = "Pods-XpdButtons_Example";
-			productReference = 339ABF87BFEE16F3363E52C990852993 /* Pods_XpdButtons_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		F560F4525E748AF0AD98B38B27D67873 /* XpdButtons */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EC6545FDECDA366E9C33CE4A60597DCB /* Build configuration list for PBXNativeTarget "XpdButtons" */;
-			buildPhases = (
-				6E4C78610BEA6161753DE6AB5762DB2C /* Sources */,
-				567C182D5DC8B7B36DAA05C23C46C543 /* Frameworks */,
-				B3FEB5A75E7A90650DB2B5F1CB693CAD /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = XpdButtons;
-			productName = XpdButtons;
-			productReference = EEB776C7BA5FF180B4DF79241F7B58A6 /* XpdButtons.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0730;
-			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = C424BDC0457C5C8FF8D6AA4B34D42E73 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				02B22214633E1419D24EBC1BF7DECDF1 /* Pods-XpdButtons_Example */,
-				F560F4525E748AF0AD98B38B27D67873 /* XpdButtons */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		6E4C78610BEA6161753DE6AB5762DB2C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0E50F0F870E73836F1D8E254E589E49B /* XpdButton.m in Sources */,
-				288F9491CA5D9469BA41E1D5BE6E654A /* XpdButtonContainer.m in Sources */,
-				523A0BE4D35CBD93AF420CFA03BF7FD4 /* XpdButtonPageController.m in Sources */,
-				BB79CA96E436431CA7F1143163CADD7E /* XpdButtons-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		91D3E02691EA261564DE3C43A5666D6A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C3AD88F9328CF120E2FBEF91402F3FC4 /* Pods-XpdButtons_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D575882CEECC22F8AED50CC043405DD1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = XpdButtons;
-			target = F560F4525E748AF0AD98B38B27D67873 /* XpdButtons */;
-			targetProxy = A382639BC80007200770C1748329C577 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		2FDF4B7E46C6C7A95D35A44CC92645CE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53945CECC224FB002BAB20CBB95E1C2A /* XpdButtons.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/XpdButtons/XpdButtons-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XpdButtons/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XpdButtons/XpdButtons.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = XpdButtons;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		8E3336DDE476A573C24249D7825B2E47 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 597EB552D9251DC2DEEDECE0271CC08A /* Pods-XpdButtons_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-XpdButtons_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-XpdButtons_Example/Pods-XpdButtons_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_XpdButtons_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B997D817DE890EECC23E5379DB42A1C7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53945CECC224FB002BAB20CBB95E1C2A /* XpdButtons.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/XpdButtons/XpdButtons-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XpdButtons/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XpdButtons/XpdButtons.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = XpdButtons;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D180ED13D89F78F8C025D133B242B32F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3FCBDA1E4DD85536405E05D5DA230DEA /* Pods-XpdButtons_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-XpdButtons_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-XpdButtons_Example/Pods-XpdButtons_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_XpdButtons_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
-				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B63B636A646D5D82653996C7F7B392F9 /* Build configuration list for PBXNativeTarget "Pods-XpdButtons_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D180ED13D89F78F8C025D133B242B32F /* Debug */,
-				8E3336DDE476A573C24249D7825B2E47 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EC6545FDECDA366E9C33CE4A60597DCB /* Build configuration list for PBXNativeTarget "XpdButtons" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B997D817DE890EECC23E5379DB42A1C7 /* Debug */,
-				2FDF4B7E46C6C7A95D35A44CC92645CE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>02B22214633E1419D24EBC1BF7DECDF1</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>B63B636A646D5D82653996C7F7B392F9</string>
+			<key>buildPhases</key>
+			<array>
+				<string>91D3E02691EA261564DE3C43A5666D6A</string>
+				<string>3FFB4BC0C2F0C6DE5EBCF8580CDC40FB</string>
+				<string>589F487E8C7A065B6370FD76DD9C75CC</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>D575882CEECC22F8AED50CC043405DD1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-XpdButtons_Example</string>
+			<key>productName</key>
+			<string>Pods-XpdButtons_Example</string>
+			<key>productReference</key>
+			<string>339ABF87BFEE16F3363E52C990852993</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>051EA178FE315C31032083E3131BD7D9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>073AD5A3774363769662AC5E5DC733DD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>073AD5A3774363769662AC5E5DC733DD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-XpdButtons_Example-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0E50F0F870E73836F1D8E254E589E49B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BEA89E3D2244CE9AE1BCF378E74956FF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>10DE1947DAC0ED28F6C0A9F9BD75D546</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>RELEASE=1</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>1A0AC30C72B873F225D634ADFFB46F71</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>XpdButton.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>23C7A40818E8D101957C0971BF5DCFCE</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>663E016349BEC642B1CFC37C3CDBD601</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>XpdButtons</string>
+			<key>path</key>
+			<string>XpdButtons</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2570B710142EE7551B07220796DB7A93</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>27E08FF7A793D380D0BA02D05F2E9F56</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>288F9491CA5D9469BA41E1D5BE6E654A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>791FCE6F6BD02B15E33C57CEEBAA60A0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>552D02D5BA751AC2E8790D2811D496CA</string>
+				<string>10DE1947DAC0ED28F6C0A9F9BD75D546</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>2FDF4B7E46C6C7A95D35A44CC92645CE</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>53945CECC224FB002BAB20CBB95E1C2A</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/XpdButtons/XpdButtons-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/XpdButtons/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/XpdButtons/XpdButtons.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>XpdButtons</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>3361DF57559AF1F9C0ED9F2539AFA8A6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-XpdButtons_Example-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>339ABF87BFEE16F3363E52C990852993</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_XpdButtons_Example.framework</string>
+			<key>path</key>
+			<string>Pods_XpdButtons_Example.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>3E4E89230EF59BC255123B67864ACF77</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>3FCBDA1E4DD85536405E05D5DA230DEA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-XpdButtons_Example.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3FFB4BC0C2F0C6DE5EBCF8580CDC40FB</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>27E08FF7A793D380D0BA02D05F2E9F56</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>44E8890B6C1D4B747BA2C72E18D27ABC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>XpdButtonPageController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4610D8CCF903637778E44BF66DACEB02</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E98F46584BFA7CECCD0F3DC0A946771D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>47563C3A8E3406AD3386377480460247</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>XpdButtons-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>523A0BE4D35CBD93AF420CFA03BF7FD4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D13FB85021604598F8EE6E6AF95A0587</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>53945CECC224FB002BAB20CBB95E1C2A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>XpdButtons.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>552D02D5BA751AC2E8790D2811D496CA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>567C182D5DC8B7B36DAA05C23C46C543</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>83F55BF5DE8CB08FF79ADFBE23AA0837</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>589F487E8C7A065B6370FD76DD9C75CC</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>051EA178FE315C31032083E3131BD7D9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>597EB552D9251DC2DEEDECE0271CC08A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-XpdButtons_Example.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>663E016349BEC642B1CFC37C3CDBD601</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B662B9C829D57D91BDE35CFB6B9D5181</string>
+				<string>D9D916068C895468304D5D2E2E8D3572</string>
+				<string>8C182567D83CA8282D94C38370EEAD75</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Classes</string>
+			<key>path</key>
+			<string>Classes</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>69CCF89747774DFFBA2397DC0DC8AD3B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-XpdButtons_Example-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6E4C78610BEA6161753DE6AB5762DB2C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>0E50F0F870E73836F1D8E254E589E49B</string>
+				<string>288F9491CA5D9469BA41E1D5BE6E654A</string>
+				<string>523A0BE4D35CBD93AF420CFA03BF7FD4</string>
+				<string>BB79CA96E436431CA7F1143163CADD7E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>791FCE6F6BD02B15E33C57CEEBAA60A0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>XpdButtonContainer.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7B98C3EA449699273B8248500CF7706E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>XpdButtons.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7D5BBF486FE8904342965BC57F46B96D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9B2A574B4653839198EEF059F33637BE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
+				<string>8931721B25D29394CA69C0EB9E8A4B71</string>
+				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
+				<string>C424BDC0457C5C8FF8D6AA4B34D42E73</string>
+				<string>7D5BBF486FE8904342965BC57F46B96D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7E3ACB663FF4E7BBDE64FA66FC8D19E2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-XpdButtons_Example-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>83F55BF5DE8CB08FF79ADFBE23AA0837</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8931721B25D29394CA69C0EB9E8A4B71</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C5F864275A5B468EB606B7A6A3BA4709</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Development Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8C182567D83CA8282D94C38370EEAD75</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>44E8890B6C1D4B747BA2C72E18D27ABC</string>
+				<string>D13FB85021604598F8EE6E6AF95A0587</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>XpdButtonPageController</string>
+			<key>path</key>
+			<string>XpdButtonPageController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8E3336DDE476A573C24249D7825B2E47</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>597EB552D9251DC2DEEDECE0271CC08A</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-XpdButtons_Example/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-XpdButtons_Example/Pods-XpdButtons_Example.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_XpdButtons_Example</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>8EE7A238927E9875220B49D455D9275D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D2D93C63EE572AF3DB9B867E71ACFDFA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>91D3E02691EA261564DE3C43A5666D6A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C3AD88F9328CF120E2FBEF91402F3FC4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>995077B5D514163161F893007EBCC1B7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1A0AC30C72B873F225D634ADFFB46F71</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>9B2A574B4653839198EEF059F33637BE</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2570B710142EE7551B07220796DB7A93</string>
+				<string>F4630A5CB126EFDADBEF6E4C0C78D6E0</string>
+				<string>7E3ACB663FF4E7BBDE64FA66FC8D19E2</string>
+				<string>E1CF12CA6A1BA7020C3BFCCE635A1517</string>
+				<string>69CCF89747774DFFBA2397DC0DC8AD3B</string>
+				<string>D77ECC93FFDEE56632C12983CE749DAA</string>
+				<string>3361DF57559AF1F9C0ED9F2539AFA8A6</string>
+				<string>073AD5A3774363769662AC5E5DC733DD</string>
+				<string>3FCBDA1E4DD85536405E05D5DA230DEA</string>
+				<string>597EB552D9251DC2DEEDECE0271CC08A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-XpdButtons_Example</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-XpdButtons_Example</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9F951BA07A09CD01D1836173B5DBEA27</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BCBFC07056C94214FE86CFBAC2DD3637</string>
+				<string>7B98C3EA449699273B8248500CF7706E</string>
+				<string>53945CECC224FB002BAB20CBB95E1C2A</string>
+				<string>47563C3A8E3406AD3386377480460247</string>
+				<string>DE25A18B91FC1BD47CE0654CBB022CD5</string>
+				<string>D2D93C63EE572AF3DB9B867E71ACFDFA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>Example/Pods/Target Support Files/XpdButtons</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A382639BC80007200770C1748329C577</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>F560F4525E748AF0AD98B38B27D67873</string>
+			<key>remoteInfo</key>
+			<string>XpdButtons</string>
+		</dict>
+		<key>B3FEB5A75E7A90650DB2B5F1CB693CAD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>995077B5D514163161F893007EBCC1B7</string>
+				<string>4610D8CCF903637778E44BF66DACEB02</string>
+				<string>C312C3B2E6C554CBEDACC26181DCF7CB</string>
+				<string>8EE7A238927E9875220B49D455D9275D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B63B636A646D5D82653996C7F7B392F9</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>D180ED13D89F78F8C025D133B242B32F</string>
+				<string>8E3336DDE476A573C24249D7825B2E47</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>B662B9C829D57D91BDE35CFB6B9D5181</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1A0AC30C72B873F225D634ADFFB46F71</string>
+				<string>BEA89E3D2244CE9AE1BCF378E74956FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>XpdButton</string>
+			<key>path</key>
+			<string>XpdButton</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B997D817DE890EECC23E5379DB42A1C7</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>53945CECC224FB002BAB20CBB95E1C2A</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/XpdButtons/XpdButtons-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/XpdButtons/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/XpdButtons/XpdButtons.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>XpdButtons</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>BB79CA96E436431CA7F1143163CADD7E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>47563C3A8E3406AD3386377480460247</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BF6342C8B29F4CEEA088EFF7AB4DE362</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BCBFC07056C94214FE86CFBAC2DD3637</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BEA89E3D2244CE9AE1BCF378E74956FF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>XpdButton.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BF6342C8B29F4CEEA088EFF7AB4DE362</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3E4E89230EF59BC255123B67864ACF77</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C312C3B2E6C554CBEDACC26181DCF7CB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>44E8890B6C1D4B747BA2C72E18D27ABC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>C3AD88F9328CF120E2FBEF91402F3FC4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>69CCF89747774DFFBA2397DC0DC8AD3B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C424BDC0457C5C8FF8D6AA4B34D42E73</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>339ABF87BFEE16F3363E52C990852993</string>
+				<string>EEB776C7BA5FF180B4DF79241F7B58A6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C5F864275A5B468EB606B7A6A3BA4709</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9F951BA07A09CD01D1836173B5DBEA27</string>
+				<string>23C7A40818E8D101957C0971BF5DCFCE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>XpdButtons</string>
+			<key>path</key>
+			<string>../..</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D13FB85021604598F8EE6E6AF95A0587</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>XpdButtonPageController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D180ED13D89F78F8C025D133B242B32F</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>3FCBDA1E4DD85536405E05D5DA230DEA</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-XpdButtons_Example/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-XpdButtons_Example/Pods-XpdButtons_Example.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_XpdButtons_Example</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>D2D93C63EE572AF3DB9B867E71ACFDFA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>XpdButtons-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D41D8CD98F00B204E9800998ECF8427E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0700</string>
+				<key>LastUpgradeCheck</key>
+				<string>0700</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7DB346D0F39D3F0E887471402A8071AB</string>
+			<key>productRefGroup</key>
+			<string>C424BDC0457C5C8FF8D6AA4B34D42E73</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>02B22214633E1419D24EBC1BF7DECDF1</string>
+				<string>F560F4525E748AF0AD98B38B27D67873</string>
+			</array>
+		</dict>
+		<key>D575882CEECC22F8AED50CC043405DD1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>XpdButtons</string>
+			<key>target</key>
+			<string>F560F4525E748AF0AD98B38B27D67873</string>
+			<key>targetProxy</key>
+			<string>A382639BC80007200770C1748329C577</string>
+		</dict>
+		<key>D77ECC93FFDEE56632C12983CE749DAA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-XpdButtons_Example-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D9D916068C895468304D5D2E2E8D3572</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E98F46584BFA7CECCD0F3DC0A946771D</string>
+				<string>791FCE6F6BD02B15E33C57CEEBAA60A0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>XpdButtonContainer</string>
+			<key>path</key>
+			<string>XpdButtonContainer</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DE25A18B91FC1BD47CE0654CBB022CD5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>XpdButtons-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E1CF12CA6A1BA7020C3BFCCE635A1517</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-XpdButtons_Example-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E98F46584BFA7CECCD0F3DC0A946771D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>XpdButtonContainer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC6545FDECDA366E9C33CE4A60597DCB</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>B997D817DE890EECC23E5379DB42A1C7</string>
+				<string>2FDF4B7E46C6C7A95D35A44CC92645CE</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>EEB776C7BA5FF180B4DF79241F7B58A6</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>XpdButtons.framework</string>
+			<key>path</key>
+			<string>XpdButtons.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>F4630A5CB126EFDADBEF6E4C0C78D6E0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-XpdButtons_Example.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F560F4525E748AF0AD98B38B27D67873</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>EC6545FDECDA366E9C33CE4A60597DCB</string>
+			<key>buildPhases</key>
+			<array>
+				<string>6E4C78610BEA6161753DE6AB5762DB2C</string>
+				<string>567C182D5DC8B7B36DAA05C23C46C543</string>
+				<string>B3FEB5A75E7A90650DB2B5F1CB693CAD</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>XpdButtons</string>
+			<key>productName</key>
+			<string>XpdButtons</string>
+			<key>productReference</key>
+			<string>EEB776C7BA5FF180B4DF79241F7B58A6</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>D41D8CD98F00B204E9800998ECF8427E</string>
+</dict>
+</plist>

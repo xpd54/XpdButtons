@@ -5,8 +5,9 @@
   "description": "A UIView which provide multiple buttons arranged in pageViewController. Button layout depends on total number of buttons you want. It will club buttons dynamically according to length of title in one page other buttons will be in next page (which will comeup after horizontal scroll).",
   "homepage": "https://github.com/xpd54/XpdButtons",
   "screenshots": [
-    "www.example.com/screenshots_1",
-    "www.example.com/screenshots_2"
+    "https://raw.githubusercontent.com/xpd54/XpdButtons/master/Example/Screenshots/screenshots_1.jpg",
+    "https://raw.githubusercontent.com/xpd54/XpdButtons/master/Example/Screenshots/screenshots_2.jpg",
+    "https://raw.githubusercontent.com/xpd54/XpdButtons/master/Example/Screenshots/screenshots_3.jpg"
   ],
   "license": {
     "type": "MIT",

@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface XpdButton : UIButton
-@property NSDictionary *buttonInfo;
-@property NSString *title;
+@property (nonatomic, strong) NSDictionary *buttonInfo;
+@property (nonatomic, strong) NSString *title;
 @end

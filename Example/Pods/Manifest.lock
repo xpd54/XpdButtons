@@ -1,5 +1,5 @@
 PODS:
-  - XpdButtons (0.1.0)
+  - XpdButtons (1.0.0)
 
 DEPENDENCIES:
   - XpdButtons (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  XpdButtons: 44c885c2f25068af714e47e01f5203d39352d055
+  XpdButtons: d01ee89976258d443a2603835015270bbaca9dbf
 
 COCOAPODS: 0.39.0

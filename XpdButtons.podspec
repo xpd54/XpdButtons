@@ -26,7 +26,7 @@ s.screenshots      = 'https://raw.githubusercontent.com/xpd54/XpdButtons/master/
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'Ravi Prakash' => 'raviprakash.xpd54@gmail.com' }
 s.source           = { :git => 'https://github.com/xpd54/XpdButtons.git', :tag => s.version.to_s }
-s.social_media_url = 'https://twitter.com/xpd54'
+#s.social_media_url = 'https://twitter.com/xpd54'
 
 s.ios.deployment_target = '8.0'
 

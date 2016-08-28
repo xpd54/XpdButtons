@@ -15,11 +15,14 @@ XpdButtons is a library which generate a view with multiple buttons dynamically 
 `XpdButtonContainer` creates a controller where you can set your button properties and the way button looks. Then you can get a `UIView` in which buttons are properly arranged.
 
 ### Creating button view
+[buttonproperties](https://github.com/xpd54/XpdButtons#buttonproperties) is an Array which holds dictionary of buttonInfo and title.
+`#import<XpdButtons/XpdButtonContainer.h>` In your `.h` file.
+
 ```objective-c
 XpdButtonContainer *buttonPageController = [[XpdButtonContainer alloc] init];
 // self <--- in which viewContoller you gonna use the view.
 buttonPageController.delegate = self;
-buttonPageController.buttonProperties = buttonproperties; // NSDictionary
+buttonPageController.buttonProperties = buttonproperties; // NSArray
 // Set your other properties for buttons.
 buttonPageController.numberOfMaxRow = 3; // Default is 2
 UIView *buttonView = [buttonPageController getXpdButtonsViewForParentViewController:self];
@@ -66,7 +69,7 @@ NSArray *properties = @[
 ```
 
 ### numberOfMaxRow
-`numberOfMaxRow` How many maximum row should be in one page view. **Default number max row is 2**
+`numberOfMaxRow` How many maximum row should be in one page view. **Default number of maximum row is 2**
 
 ### buttonBorderColor
 `buttonBorderColor` Set button border color. **Default is black.**
@@ -87,7 +90,7 @@ NSArray *properties = @[
 ```objective-c 
 -(UIView *) getXpdButtonsViewForParentViewController:(UIViewController *)parent;
 ```
-Returns a view which holds all buttons which was set in [buttonProperties](https://github.com/xpd54/XpdButtons#buttonProperties)
+Returns a view which holds all buttons which was set in [buttonProperties](https://github.com/xpd54/XpdButtons#buttonproperties)
 
 
 ## How to run Example

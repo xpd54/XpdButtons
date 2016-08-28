@@ -9,7 +9,7 @@
 #import "XViewController.h"
 
 @interface XViewController ()
-
+@property (nonatomic, strong) UITextView *inputTextView;
 @end
 
 @implementation XViewController
@@ -17,71 +17,69 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSArray *buttonproperties = @[@{@"title" : @"When does it open?",
+    // Button Properties.
+    NSArray *buttonproperties = @[@{@"title" : @"I am the 📅 button",
                                     @"buttonInfo" : @{@"key" : @"value"}
                                     },
-                                  @{@"title" : @"Show photos.",
+                                  @{@"title" : @"I should get one ⏳",
                                     @"buttonInfo" : @{@"key" : @"value 2"}
                                     },
-                                  @{@"title" : @"Accepts credit cards?",
+                                  @{@"title" : @"Laugh 👴",
                                     @"buttonInfo" : @{@"key" : @"value 3"}
                                     },
-                                  @{@"title" : @"Have valet",
+                                  @{@"title" : @"No Praking",
                                     @"buttonInfo" : @{@"key" : @"value 4"}
                                     },
-                                  @{@"title" : @"button6",
+                                  @{@"title" : @"Sleep Mode",
+                                    @"buttonInfo" : @{@"key" : @"value 5"}
+                                    },
+                                  @{@"title" : @"No Don't Allow",
                                     @"buttonInfo" : @{@"key" : @"value 6"}
                                     },
-                                  @{@"title" : @"button7",
-                                    @"buttonInfo" : @{@"key" : @"value 6"}
+                                  @{@"title" : @"Share Picture",
+                                    @"buttonInfo" : @{@"key" : @"value 7"}
+                                    },
+                                  @{@"title" : @"Download Music 🎶",
+                                    @"buttonInfo" : @{@"key" : @"value 8"}
                                     }
                                   ];
 
     XpdButtonContainer *buttonPageController = [[XpdButtonContainer alloc] init];
     buttonPageController.delegate = self;
     buttonPageController.buttonProperties = buttonproperties;
-    buttonPageController.numberOfMaxRow = 2;
+    // Number of maximum row in one page
+    buttonPageController.numberOfMaxRow = 3;
+
+    // ButtonView which have buttons aranged in page view.
     UIView *buttonView = [buttonPageController getXpdButtonsViewForParentViewController:self];
-    buttonView.translatesAutoresizingMaskIntoConstraints = false;
-    [self.view addSubview:buttonView];
-    
-    UITextView *textView = [[UITextView alloc] init];
-    textView.backgroundColor = [UIColor redColor];
-    textView.translatesAutoresizingMaskIntoConstraints = false;
-    
-    [self.view addSubview:textView];
-    NSDictionary *views = @{@"view" : buttonView,
-                            @"textView" : textView};
-    NSArray *textViewHC = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-50-[textView]-50-|"
+
+    self.inputTextView = [[UITextView alloc] init];
+    self.inputTextView.translatesAutoresizingMaskIntoConstraints = false;
+
+    // Set the view as inputView
+    [self.inputTextView setInputView:buttonView];
+
+    [self.view addSubview:self.inputTextView];
+    NSDictionary *views = @{@"textView" : self.inputTextView};
+    NSArray *textViewHC = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[textView]-20-|"
                                                                   options:NSLayoutFormatAlignAllTop
                                                                   metrics:nil
                                                                     views:views];
-    NSArray *textViewVC = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-50-[textView(50)]"
+    NSArray *textViewVC = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-50-[textView(30)]"
                                                                   options:NSLayoutFormatAlignAllCenterX
                                                                   metrics:nil
                                                                     views:views];
     [self.view addConstraints:textViewHC];
     [self.view addConstraints:textViewVC];
-
-    NSArray *HC = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[view]-0-|"
-                                                          options:NSLayoutFormatAlignAllTop
-                                                          metrics:nil
-                                                            views:views];
-    NSArray *VC = [NSLayoutConstraint constraintsWithVisualFormat:@"V:[view(200)]-0-|"
-                                                          options:NSLayoutFormatAlignAllLeft
-                                                          metrics:nil
-                                                            views:views];
-    [self.view addConstraints:HC];
-    [self.view addConstraints:VC];
 }
 
+#pragma mark XpdButtonAction protocol
+
 - (void) buttonGetClicked:(XpdButton *)button {
-    if ([[button.buttonInfo objectForKey:@"key"] isEqualToString:@"value"]) {
-        NSLog(@"%@", [button.buttonInfo objectForKey:@"key"]);
-    }
-    
-    if ([button.title isEqualToString:@"Button 1"]) {
-        // Do something
-    }
+    NSString *titleText = button.titleLabel.text;
+    // Handle button click
+
+    [self.inputTextView setText:titleText];
+    NSLog(@"%@", button.buttonInfo);
 }
 @end

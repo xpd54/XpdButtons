@@ -26,7 +26,7 @@
 
 - (void) loadView {
     [super loadView];
-    NSInteger *numberOfMaxRow;
+    NSInteger numberOfMaxRow;
     numberOfMaxRow = self.numberOfMaxRow ? self.numberOfMaxRow : 2;
     self.buttonViewControllers = [[NSArray alloc] initWithArray:[self getViewControllersHoldingButtons:self.buttonProperties numberOfRowViewController:numberOfMaxRow]];
     self.pageViewContrroller = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll
@@ -224,7 +224,7 @@
 
         [button sizeToFit];
 
-        CGColorRef *borderColor;
+        CGColorRef borderColor;
         borderColor = self.buttonBorderColor ? self.buttonBorderColor.CGColor : DEFAULT_COLOR.CGColor;
         [button.layer setBorderColor:borderColor];
         button.layer.borderWidth = 1.0;

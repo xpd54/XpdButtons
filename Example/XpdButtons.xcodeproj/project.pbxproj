@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		188B1246A6589651585C1562 /* Pods_XpdButtons_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA15AB34EE50540DA17688A5 /* Pods_XpdButtons_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -21,7 +22,6 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		93580643E59A768547654F29 /* Pods_XpdButtons_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A4E713543DBAF2F729F60A1 /* Pods_XpdButtons_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1E3627B1A215B094BD9831AC /* Pods-XpdButtons_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XpdButtons_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-XpdButtons_Example/Pods-XpdButtons_Example.release.xcconfig"; sourceTree = "<group>"; };
-		2A4E713543DBAF2F729F60A1 /* Pods_XpdButtons_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XpdButtons_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0F43171A7EF60A82314AF2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4BE713955BDB98E6CC62FF42 /* Pods-XpdButtons_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XpdButtons_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-XpdButtons_Example/Pods-XpdButtons_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5EE41859623AE6CFDAB7BF30 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* XpdButtons_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XpdButtons_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,7 +59,8 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9B3E7EC4C5E54F03DAF97A9A /* XpdButtons.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XpdButtons.podspec; path = ../XpdButtons.podspec; sourceTree = "<group>"; };
-		AA56D2F60ED40FEF5F7C61F8 /* Pods-XpdButtons_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XpdButtons_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XpdButtons_Example/Pods-XpdButtons_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		AFFF42DF61427650B2CB6919 /* Pods-XpdButtons_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XpdButtons_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XpdButtons_Example/Pods-XpdButtons_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		CA15AB34EE50540DA17688A5 /* Pods_XpdButtons_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XpdButtons_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				93580643E59A768547654F29 /* Pods_XpdButtons_Example.framework in Frameworks */,
+				188B1246A6589651585C1562 /* Pods_XpdButtons_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A80EEFB503EACCBB9B7807E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFFF42DF61427650B2CB6919 /* Pods-XpdButtons_Example.debug.xcconfig */,
+				4BE713955BDB98E6CC62FF42 /* Pods-XpdButtons_Example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -96,7 +105,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				E55FB550257718FF8BAF2259 /* Pods */,
+				1A80EEFB503EACCBB9B7807E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,7 +125,7 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				2A4E713543DBAF2F729F60A1 /* Pods_XpdButtons_Example.framework */,
+				CA15AB34EE50540DA17688A5 /* Pods_XpdButtons_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -176,15 +185,6 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		E55FB550257718FF8BAF2259 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AA56D2F60ED40FEF5F7C61F8 /* Pods-XpdButtons_Example.debug.xcconfig */,
-				1E3627B1A215B094BD9831AC /* Pods-XpdButtons_Example.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -192,12 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "XpdButtons_Example" */;
 			buildPhases = (
-				D93D4BC83C6BD2846DE96436 /* Check Pods Manifest.lock */,
+				8CBE0CE4732163FAB3035E0E /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				1C396F3BA626AF69137A764B /* Embed Pods Frameworks */,
-				AE5316EBA48D2F228E01C5F3 /* Copy Pods Resources */,
+				288A9ADFDBE0B64F7445BFCC /* [CP] Embed Pods Frameworks */,
+				C4E609BCF4D978AA0103BFD6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -282,14 +282,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1C396F3BA626AF69137A764B /* Embed Pods Frameworks */ = {
+		288A9ADFDBE0B64F7445BFCC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,34 +297,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XpdButtons_Example/Pods-XpdButtons_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AE5316EBA48D2F228E01C5F3 /* Copy Pods Resources */ = {
+		8CBE0CE4732163FAB3035E0E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XpdButtons_Example/Pods-XpdButtons_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D93D4BC83C6BD2846DE96436 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C4E609BCF4D978AA0103BFD6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XpdButtons_Example/Pods-XpdButtons_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -453,7 +453,7 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA56D2F60ED40FEF5F7C61F8 /* Pods-XpdButtons_Example.debug.xcconfig */;
+			baseConfigurationReference = AFFF42DF61427650B2CB6919 /* Pods-XpdButtons_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -470,7 +470,7 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E3627B1A215B094BD9831AC /* Pods-XpdButtons_Example.release.xcconfig */;
+			baseConfigurationReference = 4BE713955BDB98E6CC62FF42 /* Pods-XpdButtons_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

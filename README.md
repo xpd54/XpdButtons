@@ -1,6 +1,6 @@
 # XpdButtons
 
-[![CI Status](http://img.shields.io/travis/Ravi Prakash/XpdButtons.svg?style=flat)](https://travis-ci.org/Ravi Prakash/XpdButtons)
+[![Build Status](https://travis-ci.org/xpd54/XpdButtons.svg?branch=master)](https://travis-ci.org/xpd54/XpdButtons)
 [![Version](https://img.shields.io/cocoapods/v/XpdButtons.svg?style=flat)](http://cocoapods.org/pods/XpdButtons)
 [![License](https://img.shields.io/cocoapods/l/XpdButtons.svg?style=flat)](http://cocoapods.org/pods/XpdButtons)
 [![Platform](https://img.shields.io/cocoapods/p/XpdButtons.svg?style=flat)](http://cocoapods.org/pods/XpdButtons)

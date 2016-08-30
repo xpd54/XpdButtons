@@ -57,9 +57,10 @@
 
     self.inputTextView = [[UITextView alloc] init];
     self.inputTextView.translatesAutoresizingMaskIntoConstraints = false;
-
+    UIView *inputView = [[UIView alloc] initWithFrame:buttonView.frame];
+    [inputView addSubview:buttonView];
     // Set the view as inputView
-    [self.inputTextView setInputView:buttonView];
+    [self.inputTextView setInputView:inputView];
     [self.inputTextView setText:@"Click"];
 
     // Constraints of textView

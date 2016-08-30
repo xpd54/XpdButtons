@@ -105,7 +105,8 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "XpdButtons"
 ```
-
+## Contribution
+You wanna help to make it better and easy to use. Send me pull request 😃.
 ## Author
 
 Ravi Prakash, raviprakash.xpd54@gmail.com

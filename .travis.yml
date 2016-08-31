@@ -8,5 +8,5 @@ podfile: Example/Podfile
 # - gem install cocoapods # Since Travis is not always on latest version
 # - pod install --project-directory=Example
 script:
-- set -o pipefail && xcodebuild test -workspace Example/XpdButtons.xcworkspace -scheme XpdButtons-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
+- set -o pipefail && xcodebuild test -workspace Example/XpdButtons.xcworkspace -scheme XpdButtons-Example -destination 'platform=iOS Simulator,name=iPhone 6 Plus' | xcpretty -c && exit ${PIPESTATUS[0]}
 - pod lib lint

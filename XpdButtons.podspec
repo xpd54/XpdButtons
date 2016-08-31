@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'XpdButtons'
-s.version          = '1.0.3'
+s.version          = '1.0.4'
 s.summary          = 'A UIView which provide multiple buttons arranged according to title lenght in pageViewController.'
 
 # This description is used to generate tags and improve search results.
@@ -22,7 +22,7 @@ s.description      = <<-DESC
                      DESC
 
 s.homepage         = 'https://github.com/xpd54/XpdButtons'
-s.screenshots      = 'https://raw.githubusercontent.com/xpd54/XpdButtons/master/Example/Screenshots/screenshots_1.jpg', 'https://raw.githubusercontent.com/xpd54/XpdButtons/master/Example/Screenshots/screenshots_2.jpg', 'https://raw.githubusercontent.com/xpd54/XpdButtons/master/Example/Screenshots/screenshots_3.jpg'
+s.screenshots      = 'https://raw.githubusercontent.com/xpd54/XpdButtons/master/Example/Screenshots/screenshots_1.png', 'https://raw.githubusercontent.com/xpd54/XpdButtons/master/Example/Screenshots/screenshots_2.png'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'Ravi Prakash' => 'raviprakash.xpd54@gmail.com' }
 s.source           = { :git => 'https://github.com/xpd54/XpdButtons.git', :tag => s.version.to_s }

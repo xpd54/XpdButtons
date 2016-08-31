@@ -8,9 +8,7 @@
 
 #import "XpdButtonPageController.h"
 #define SPACING 6
-#define EVENPAD 0
-#define ODDPAD 0
-#define BUTTON_HEIGHT 34
+#define BOTTOM_MARGIN 34
 #define DEFAULT_COLOR [UIColor blackColor]
 @interface XpdButtonPageController ()
 @property (nonatomic, strong) UIPageViewController *pageViewContrroller;
@@ -18,7 +16,10 @@
 @end
 
 @implementation XpdButtonPageController
-
+{
+    CGFloat buttonHeight;
+    CGFloat frameHeight;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -26,9 +27,12 @@
 
 - (void) loadView {
     [super loadView];
+    // Intializing frameHeight
+    frameHeight = 0;
     NSInteger maxRow;
     maxRow = self.numberOfMaxRow ? self.numberOfMaxRow : 2;
     self.buttonViewControllers = [[NSArray alloc] initWithArray:[self getViewControllersHoldingButtons:self.buttonProperties numberOfRowViewController:maxRow]];
+    
     self.pageViewContrroller = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll
                                                                navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal
                                                                              options:nil];
@@ -46,6 +50,7 @@
     pageControl.currentPageIndicatorTintColor = cpITColor;
     [self addChildViewController:self.pageViewContrroller];
     [self.view addSubview:self.pageViewContrroller.view];
+    self.view.frame = CGRectMake(0, 0, self.view.frame.size.width, frameHeight);
     [self.pageViewContrroller didMoveToParentViewController:self];
 }
 
@@ -108,6 +113,7 @@
 
 - (UIViewController *) getViewControllerWithViewArray:(NSArray *)views {
     UIViewController *viewcontroller = [[UIViewController alloc] init];
+    CGFloat calculatedHeight = 0;
     for (int i = 0; i < views.count; i++) {
         UIView *view = [views objectAtIndex:i];
         UIView *spacerLeft = [[UIView alloc] init];
@@ -119,15 +125,14 @@
         [viewcontroller.view addSubview:spacerRight];
         [viewcontroller.view addSubview:spacerLeft];
         NSString *viewKey = [NSString stringWithFormat:@"view%d", i];
-        int verticalPading = i == 0 ? SPACING : ((i + 1) * SPACING) + i * BUTTON_HEIGHT;
-        int margin  = i % 2 ? ODDPAD : EVENPAD;
-        NSDictionary *metrics = @{@"margin": [NSNumber numberWithInt:margin],
+        int verticalPading = i == 0 ? SPACING : ((i + 1) * SPACING) + i * buttonHeight;
+        NSDictionary *metrics = @{
                                   @"vPading" : [NSNumber numberWithInt:verticalPading]
                                   };
         NSDictionary *views = @{viewKey : view,
                                 @"spacerLeft" : spacerLeft,
                                 @"spacerRight" : spacerRight};
-        NSString *hcString = [NSString stringWithFormat:@"H:|-0-[spacerLeft(spacerRight)]-margin-[%@]-margin-[spacerRight]-0-|", viewKey];
+        NSString *hcString = [NSString stringWithFormat:@"H:|-0-[spacerLeft(spacerRight)]-[%@]-[spacerRight]-0-|", viewKey];
         NSString *vcString = [NSString stringWithFormat:@"V:|-vPading-[%@]", viewKey];
         NSArray *horizontalConstraint = [NSLayoutConstraint constraintsWithVisualFormat:hcString
                                                                                 options:0
@@ -139,6 +144,11 @@
                                                                                 views:views];
         [viewcontroller.view addConstraints: horizontalConstraint];
         [viewcontroller.view addConstraints:verticalConstraint];
+        calculatedHeight = verticalPading + buttonHeight + SPACING + BOTTOM_MARGIN;
+    }
+    //we will consider only the maximum frameHeight
+    if (calculatedHeight > frameHeight) {
+        frameHeight = calculatedHeight;
     }
     return viewcontroller;
 }
@@ -185,14 +195,10 @@
     for (int i = 0; buttonArray.count > 0; i++) {
         NSMutableArray *row = [[NSMutableArray alloc] init];
         CGFloat width = 0;
-        if(i % 2 == 0) {
-            width = 2 * EVENPAD;
-        } else {
-            width = 2 * ODDPAD;
-        }
         for(int j = 0; buttonArray.count > 0; j++) {
             XpdButton *firstButton = (XpdButton *)[buttonArray firstObject];
             width = width + firstButton.frame.size.width + j * SPACING;
+            buttonHeight = firstButton.frame.size.height;
             if (width <= self.view.frame.size.width) {
                 XpdButton *button = [buttonArray firstObject];
                 [row addObject:button];

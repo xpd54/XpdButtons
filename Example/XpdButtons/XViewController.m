@@ -27,7 +27,7 @@
                                   @{@"title" : @"Laugh 👴",
                                     @"buttonInfo" : @{@"key" : @"value 3"}
                                     },
-                                  @{@"title" : @"No Praking",
+                                  @{@"title" : @"No Praking 🚗",
                                     @"buttonInfo" : @{@"key" : @"value 4"}
                                     },
                                   @{@"title" : @"Sleep Mode",
@@ -36,7 +36,7 @@
                                   @{@"title" : @"No Don't Allow",
                                     @"buttonInfo" : @{@"key" : @"value 6"}
                                     },
-                                  @{@"title" : @"Share Picture",
+                                  @{@"title" : @"Share Picture ⬆",
                                     @"buttonInfo" : @{@"key" : @"value 7"}
                                     },
                                   @{@"title" : @"Download Music 🎶",
@@ -57,9 +57,10 @@
 
     self.inputTextView = [[UITextView alloc] init];
     self.inputTextView.translatesAutoresizingMaskIntoConstraints = false;
-
+    UIView *inputView = [[UIView alloc] initWithFrame:buttonView.frame];
+    [inputView addSubview:buttonView];
     // Set the view as inputView
-    [self.inputTextView setInputView:buttonView];
+    [self.inputTextView setInputView:inputView];
     [self.inputTextView setText:@"Click"];
 
     // Constraints of textView

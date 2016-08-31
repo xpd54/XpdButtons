@@ -5,8 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/XpdButtons.svg?style=flat)](http://cocoapods.org/pods/XpdButtons)
 [![Platform](https://img.shields.io/cocoapods/p/XpdButtons.svg?style=flat)](http://cocoapods.org/pods/XpdButtons)
 
-![firstScreen](./Example/Screenshots/screenshots_1.jpg)
-![firstScreen](./Example/Screenshots/screenshots_3.jpg)
+![firstScreen](./Example/Screenshots/screenshots_1.png)
+![firstScreen](./Example/Screenshots/screenshots_2.png)
 
 XpdButtons is a library which generate a view with multiple buttons dynamically arrange according to button title length. Number of row in one page view have to be fix and if there is more buttons, it will show up in next page view.
 
@@ -107,6 +107,7 @@ pod "XpdButtons"
 ```
 ## Contribution
 You wanna help to make it better and easy to use. Send me pull request 😃.
+PS :- Send pull request on `development` branch.
 ## Author
 
 Ravi Prakash, raviprakash.xpd54@gmail.com
